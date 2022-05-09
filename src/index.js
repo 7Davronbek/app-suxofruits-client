@@ -14,6 +14,7 @@ root.render(
   <Navbar />
     <Routes>
       <Route path="/" exact element={<App />} />
+      <Route path="/qwe" exact element={<App />} />
     </Routes>
   </Router>
 );

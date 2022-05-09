@@ -9,7 +9,7 @@ const Header = () => {
                     <div className="row">
                         <div className="col-12">
                             <div className="wrap">
-                                <h1>
+                                <h1 className='bold'>
                                     Lorem ipsum dolor sit amet.
                                 </h1>
                                 <h5>

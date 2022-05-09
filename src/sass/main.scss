@@ -1,0 +1,274 @@
+// @font-face {
+//     font-family: "CustomFont";
+//     src: url("fonts/") format("otf"),
+// }
+$main: #87cf8e;
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;;500;600&display=swap');
+
+html {
+
+    ::selection {
+        background-color: #000;
+        color: red;
+    }
+
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: silver;
+        border-radius: 15px;
+    }
+
+    body {
+        background-color: #e5e5e5;
+        color: #222;
+        overflow-x: hidden;
+        font-family: 'Raleway', sans-serif;
+
+        ul,
+        li {
+            list-style: none;
+            margin: 0;
+            padding: 0 !important;
+        }
+
+        .card {
+            background-color: transparent;
+            border: 0;
+            padding: 0;
+
+            .card-body {
+                background-color: transparent;
+                border: 0;
+                padding: 0;
+            }
+        }
+
+        .cursor {
+            cursor: pointer;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            margin-bottom: 0;
+        }
+
+        img {
+            user-select: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            outline: none !important;
+
+            &:hover {
+                text-decoration: none !important;
+                color: #ccc;
+            }
+        }
+
+        .blur {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #000000a1;
+            backdrop-filter: blur(10px);
+        }
+
+        .myBtn {
+            background-color: $main;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 30px;
+            letter-spacing: 0.03em;
+            color: #FFFFFF;
+            border-radius: 20px;
+            position: relative;
+            padding: 23px 33px;
+            font-size: 16px;
+            background: transparent;
+            border: none;
+            position: relative;
+            color: #f0f0f0;
+            z-index: 1;
+
+            &:active {
+                &::after {
+                    transition: 0s;
+                    transform: translate(0, 5%);
+                }
+            }
+
+            &::after,
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                z-index: -99999;
+                transition: all .4s;
+            }
+
+            &::before {
+                transform: translate(0%, 0%);
+                width: 100%;
+                height: 100%;
+                background: #28282d;
+                border-radius: 10px;
+            }
+
+            &::after {
+                transform: translate(10px, 10px);
+                width: 35px;
+                height: 35px;
+                background: #ffffff15;
+                backdrop-filter: blur(5px);
+                border-radius: 50px;
+            }
+
+            &:hover {
+                color: #fff;
+
+                &::before {
+                    transform: translate(5%, 20%);
+                    width: 110%;
+                    height: 110%;
+                }
+
+                &::after {
+                    border-radius: 10px;
+                    transform: translate(0, 0);
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            // &::after {
+            //     content: '';
+            //     position: absolute;
+            //     top: 20px;
+            //     left: 0;
+            //     right: 0;
+            //     bottom: 0;
+            //     border-radius: 20px;
+            //     z-index: -1;
+            //     width: 100%;
+            //     filter: blur(30px);
+            //     background-color: #a4e7acdb;
+            // }
+
+        }
+
+        .btnGradient {
+            // background: linear-gradient(to bottom right, #87cf8e, #b8cf87);
+            background: linear-gradient(to bottom right, #87cf8e, #488d4f);
+            background-size: 800% 400%;
+            padding: 1em 2em;
+            display: inline-block;
+            border: none;
+            border-radius: 10px;
+            font-size: 17px;
+            font-weight: 700;
+            color: white;
+            transition: all .5s ease-in-out;
+            animation: gradient 10s infinite cubic-bezier(.62, .28, .23, .99) both;
+
+            &:hover {
+                animation: gradient 3s infinite;
+                transform: scale(1.04);
+                color: #fff;
+            }
+
+            &:active {
+                animation: gradient 3s infinite;
+                transform: scale(0.8);
+            }
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .container {
+            max-width: 1440px;
+        }
+
+        .navBar {
+            padding: 60px 0 40px;
+
+            ul {
+                display: flex;
+
+                li {
+                    margin-right: 40px;
+
+                    a {
+                        font-weight: 500;
+                        font-size: 25px;
+                        line-height: 33px;
+                        color: #163561;
+                        position: relative;
+                        transition: all .2s ease-in-out;
+
+                        &::after {
+                            position: absolute;
+                            top: 0;
+                            background: transparent;
+                            border-radius: 5px;
+                            content: '';
+                            position: absolute;
+                            top: -88px;
+                            left: -13%;
+                            width: 126%;
+                            height: 135px;
+                            z-index: -1;
+                            transition: all .4s ease-in-out;
+                            cursor: pointer;
+                        }
+
+                        &:hover {
+                            color: $main;
+                        }
+
+                        &.active  {
+                            color: #fff;
+
+                            &::after {
+                                background-color: $main;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

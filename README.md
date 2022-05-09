@@ -1,1 +1,1 @@
-# app-suxofruits-app
+# app-suxofruits-client

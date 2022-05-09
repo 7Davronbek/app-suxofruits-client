@@ -1,13 +1,25 @@
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 
 const Navbar = () => {
+    const [navbar, setNavbar] = useState(false);
+    const location = useLocation();
+
+    const changeNavbar = () => {
+        if (window.scrollY >= 30) {
+            setNavbar(true);
+        } else {
+            setNavbar(false)
+        }
+    }
+
+    window.addEventListener('scroll', changeNavbar);
   return (
     <>
     {/* Gallary <FontAwesomeIcon icon={faCoffee} FontAwesomeIcon/> */}
-        <div className="navBar">
+        <div className={`navBar ${navbar ? 'active' : ''}`}>
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-2">

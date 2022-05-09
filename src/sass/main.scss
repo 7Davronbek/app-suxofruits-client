@@ -5,6 +5,15 @@
 // $main: #215248;
 $main: #45b39c;
 
+@font-face {
+    font-family: "Font-Bold";
+    src: url("../fonts/Fontfabric - Nexa Script Bold.otf") format("truetype");
+}
+
+.bold    {
+    font-family: "Font-Bold", sans-serif;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;;500;600&display=swap');
 
 html {
@@ -411,6 +420,7 @@ html {
 
         .aboutUs {
             padding: 65px 0 100px;
+            box-shadow: inset 0 0 10px #c0c0c0cf;
 
             h1 {
                 font-weight: 700;

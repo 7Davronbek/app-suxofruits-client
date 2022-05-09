@@ -10,7 +10,7 @@ const Navbar = () => {
         <div className="navBar">
             <div className="container">
                 <div className="row align-items-center">
-                    <div className="col-1">
+                    <div className="col-2">
                         <div className="img"><img src="/assets/image/logo.png" className='w-100' alt="" /></div>
                     </div>
                     <div className="col-6 offset-2">
@@ -21,8 +21,8 @@ const Navbar = () => {
                             <li><Link to='/' >Gallary</Link></li>
                         </ul>
                     </div>
-                    <div className="col-3 ml-auto">
-                        <button className="btn btnGradient d-flex align-items-center"><span className="me-2"> <FontAwesomeIcon icon={faPhone} /> </span>Appointment me</button>
+                    <div className="col-2 ml-auto">
+                        <button className="btn btnGradient2 d-flex align-items-center"><span className="me-2"> <FontAwesomeIcon icon={faPhone} /> </span>Appointment me</button>
                     </div>
                 </div>
             </div>

@@ -342,10 +342,16 @@ html {
             }
 
             &.active {
-                background-color: #fff;
+                // background-color: #fff;
+                // padding: 30px 0 20px;
+                // box-shadow: 0 0 10px silver;
+                z-index: 9999;
+                background-color: #ffffff00;
+                backdrop-filter: blur(10px);
                 padding: 30px 0 20px;
                 box-shadow: 0 0 10px silver;
-                z-index: 9999;
+                /* z-index: 999999; */
+                border-bottom: 1px solid silver;
             }
         }
 
@@ -400,6 +406,44 @@ html {
                     animation: anim2 10s linear infinite;
                     width: 100%;
                 }
+            }
+        }
+
+        .aboutUs {
+            padding: 65px 0 100px;
+
+            h1 {
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 22px;
+                color: #000000;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 44px;
+                    height: 2px;
+                    border-radius: 0.2px;
+                    background-color: $main;
+                    bottom: -20px;
+                    left: 0;
+                }
+            }
+
+            h2 {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 28px;
+                color: #000000;
+                margin: 44px 0 33px;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+                color: #666666;
             }
         }
     }

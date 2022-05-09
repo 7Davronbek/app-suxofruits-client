@@ -93,6 +93,29 @@ html {
             }
         }
 
+        .left,
+        .right {
+            position: absolute;
+
+            img {
+                border-radius: 0;
+                transform: scale(1.1);
+            }
+        }
+
+        .right {
+            right: 0;
+            bottom: -50px;
+        }
+
+        .left {
+            top: 7px;
+            z-index: -1;
+            left: -0;
+            transform: rotate(180deg);
+        }
+
+
         .blur {
             position: absolute;
             top: 0;
@@ -427,28 +450,6 @@ html {
                 border-radius: 15px;
             }
 
-            .left,
-            .right {
-                position: absolute;
-
-                img {
-                    border-radius: 0;
-                    transform: scale(1.1);
-                }
-            }
-
-            .right {
-                right: 0;
-                bottom: -50px;
-            }
-
-            .left {
-                top: 7px;
-                z-index: -1;
-                left: -0;
-                transform: rotate(180deg);
-            }
-
             h1 {
                 font-weight: 700;
                 font-size: 40px;
@@ -481,6 +482,78 @@ html {
                 font-size: 16px;
                 line-height: 28px;
                 color: #666666;
+            }
+        }
+
+        .galary {
+            padding: 70px 0;
+            background: radial-gradient(circle farthest-corner at 10% 20%, #45b39c 0%, #159b7ee6 90%);
+
+            .cards {
+                position: relative;
+
+                .img {
+                    position: relative;
+                    margin-left: auto;
+                    width: 240px;
+                    height: 190px;
+
+                    &::after {
+                        content: '';
+                        width: 86%;
+                        height: 86%;
+                        position: absolute;
+                        border: 1px solid transparent;
+                        top: 7%;
+                        left: 7%;
+                        border-radius: 10px;
+                        transition: all .4s ease-in-out;
+                    }
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: #45b39c5c;
+                        transition: all .4s ease-in-out;
+                        opacity: 0;
+                        visibility: hidden;
+                        border-radius: 10px;
+                    }
+
+                    img {
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 10px;
+                    }
+                }
+
+                h2 {
+                    position: absolute;
+                    top: 15px;
+                    left: 30px;
+                }
+
+                &:hover {
+                    cursor: pointer;
+
+                    .img {
+
+                        &::after {
+                            border-color: $main;
+                        }
+    
+                        &::before {
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+                }
             }
         }
     }

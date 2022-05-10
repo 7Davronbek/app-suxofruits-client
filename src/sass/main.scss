@@ -94,7 +94,8 @@ html {
         }
 
         .left,
-        .right {
+        .right,
+        .leftBottom {
             position: absolute;
 
             img {
@@ -103,9 +104,16 @@ html {
             }
         }
 
+        .leftBottom {
+            position: absolute;
+            left: 0;
+            bottom: -77px;
+        }
+
         .right {
             right: 0;
             bottom: -50px;
+            z-index: 1;
         }
 
         .left {
@@ -486,8 +494,10 @@ html {
         }
 
         .galary {
-            padding: 70px 0;
-            background: radial-gradient(circle farthest-corner at 10% 20%, #45b39c 0%, #159b7ee6 90%);
+            padding: 90px 0 70px;
+            // background: radial-gradient(circle farthest-corner at 10% 20%, #45b39c 0%, #159b7ee6 90%);
+            background-color: #fff;
+            position: relative;
 
             .cards {
                 position: relative;
@@ -536,18 +546,35 @@ html {
                 h2 {
                     position: absolute;
                     top: 15px;
-                    left: 30px;
+                    left: 15px;
+                    font-size: 28px;
+                    text-transform: uppercase;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    background-color: #000;
+                    width: 1px;
+                    height: 58%;
+                    bottom: 8px;
+                    left: 115px;
+                    transition: all .4s ease-in-out;
                 }
 
                 &:hover {
                     cursor: pointer;
+
+                    &::after {
+                        background-color: $main;
+                    }
 
                     .img {
 
                         &::after {
                             border-color: $main;
                         }
-    
+
                         &::before {
                             opacity: 1;
                             visibility: visible;

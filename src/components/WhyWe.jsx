@@ -88,6 +88,7 @@ const WhyWe = () => {
                         </div>
                     </div>
                 </div>
+                <div className="right"><img src="/assets/image/nuts.png" alt="" /></div>
             </div>
 
         </>

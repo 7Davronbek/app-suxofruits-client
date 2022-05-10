@@ -494,7 +494,7 @@ html {
         }
 
         .galary {
-            padding: 90px 0 70px;
+            padding: 80px 0 80px;
             // background: radial-gradient(circle farthest-corner at 10% 20%, #45b39c 0%, #159b7ee6 90%);
             background-color: #fff;
             position: relative;
@@ -507,6 +507,11 @@ html {
                     margin-left: auto;
                     width: 240px;
                     height: 190px;
+                    overflow: hidden;
+                    border-radius: 42% 56%, 72% 28% / 42% 42% 56% 48%;
+                    background-size: cover;
+                    background-position: center;
+                    animation: morph 8s linear infinite alternate;
 
                     &::after {
                         content: '';
@@ -539,7 +544,8 @@ html {
                     img {
                         height: 100%;
                         object-fit: cover;
-                        border-radius: 10px;
+                        animation: morph 8s linear infinite alternate;
+                        // border-radius: 10px;
                     }
                 }
 
@@ -593,5 +599,21 @@ html {
 
     100% {
         background-position: 1500px;
+    }
+}
+
+@keyframes morph {
+
+    0%,
+    100% {
+        border-radius: 42% 56%, 72% 28% / 42% 42% 56% 48%;
+    }
+
+    33% {
+        border-radius: 72% 28% 48% 48% / 28% 28% 72% 72%;
+    }
+
+    66% {
+        border-radius: 100% 56% 56% 100% / 100% 100% 56% 56%;
     }
 }

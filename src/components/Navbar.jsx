@@ -25,11 +25,11 @@ const Navbar = () => {
                         <div className="col-2">
                             <div className="img"><img src="/assets/image/logo.png" className='w-100' alt="" /></div>
                         </div>
-                        <div className="col-6 offset-2">
+                        <div className="col-7 offset-1">
                             <ul>
-                                <li><Link to='/' className={`${location.pathname === '/' ? 'active' : ''}`}>Home</Link></li>
-                                <li><Link to='/qwe' className={`${location.pathname === '/qwe' ? 'active' : ''}`} >History</Link></li>
-                                <li><Link to='/qwe2' className={`${location.pathname === '/qwe2' ? 'active' : ''}`} >Service</Link></li>
+                                <li><Link to='/' className={`${location.pathname === '/' ? 'active' : ''}`}>Главная</Link></li>
+                                <li><Link to='/qwe' className={`${location.pathname === '/qwe' ? 'active' : ''}`} >Продукция</Link></li>
+                                <li><Link to='/about-company' className={`${location.pathname === '/about-company' ? 'active' : ''}`} >О компании</Link></li>
                                 <li><Link to='/qwe3' className={`${location.pathname === '/qwe3' ? 'active' : ''}`} >Gallary</Link></li>
                             </ul>
                         </div>

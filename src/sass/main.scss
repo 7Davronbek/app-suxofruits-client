@@ -42,7 +42,6 @@ html {
     body {
         background-color: #e5e5e5;
         color: #222;
-        overflow-x: hidden;
         font-family: 'Raleway', sans-serif;
 
         ul,
@@ -654,6 +653,54 @@ html {
                     bottom: -7px;
                     left: 41%;
                 }
+            }
+        }
+
+        .headerTop {
+            z-index: 99999;
+            height: 50vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            h1 {
+                font-size: 40px;
+                line-height: 48px;
+                color: #fff;
+                margin-bottom: 20px;
+            }
+
+            P {
+                letter-spacing: .5px;
+                color: #fff;
+                line-height: 30px;
+            }
+
+            .headerWrap {
+                width: 65%;
+                text-align: center;
+                margin: 0 auto;
+                backdrop-filter: blur(25px);
+                background: #ffffff26;
+                border: 2px solid #ffffffb8;
+                padding: 100px 100px;
+                border-radius: 36px;
+                box-shadow: 0 0 10px #c0c0c069;
+            }
+        }
+
+        .aboutHeader {
+            background-image: url(../images/aboutBg.jpg);
+
+            svg {
+                position: absolute;
+                left: 0;
+                bottom: -133px;
             }
         }
     }

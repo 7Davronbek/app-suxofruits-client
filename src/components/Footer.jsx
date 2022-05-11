@@ -8,7 +8,7 @@ const Footer = () => {
                 <div className="container">
                     <div className="row justify-content-">
                         <div className="col-2 offset-1">
-                            <div className="logo"><img src="/assets/image/logo.png" alt="" /></div>
+                            <div className="logo"><h6 className=""><span className='bold'>Eko</span>frukt</h6></div>
                             <div className="d-flex align-items-center justify-content-center mt-3">
                                 <div className="icon cursor icon-tg"></div>
                                 <div className="icon cursor mx-3 icon-insta"></div>

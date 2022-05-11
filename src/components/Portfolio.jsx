@@ -6,7 +6,7 @@ const Portfolio = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-12">
-                        <h2 className="h2 bold">Наши продукции</h2>
+                        <h2 className="h2 bold">Галерея работ</h2>
                     </div>
                 </div>
                 <div className="image-gallary">

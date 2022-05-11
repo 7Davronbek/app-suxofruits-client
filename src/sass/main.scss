@@ -1,9 +1,44 @@
-// @font-face {
-//     font-family: "CustomFont";
-//     src: url("fonts/") format("otf"),
-// }
 // $main: #215248;
 $main: #45b39c;
+
+
+.icon {
+    width: 25px;
+    height: 28px;
+    display: inline-block;
+
+    mask-size: 100%;
+    mask-repeat: no-repeat;
+
+    -webkit-mask-size: 100%;
+    -webkit-mask-repeat: no-repeat;
+
+    background-color: #fff;
+
+    &.icon-fb {
+        mask-image: url("../images/fb.svg");
+        -webkit-mask-image: url("../images/fb.svg");
+        mask-size: 80%;
+        -webkit-mask-size: 80%;
+    }
+
+    &.icon-tg {
+        mask-image: url("../images/tg.svg");
+        -webkit-mask-image: url("../images/tg.svg");
+    }
+
+    &.icon-love {
+        mask-image: url("../images/love.png");
+        -webkit-mask-image: url("../images/love.png");
+        width: 20px;
+        height: 20px;
+    }
+
+    &.icon-insta {
+        mask-image: url("../images/insta.svg");
+        -webkit-mask-image: url("../images/insta.svg");
+    }
+}
 
 @font-face {
     font-family: "Font-Bold";
@@ -362,6 +397,7 @@ html {
                         color: #163561;
                         position: relative;
                         transition: all .2s ease-in-out;
+                        user-select: none;
 
                         &::after {
                             position: absolute;
@@ -774,7 +810,7 @@ html {
         }
 
         .socials {
-            display: none !important;
+            // display: none !important;
             position: fixed;
             z-index: 9999;
             top: 50%;
@@ -822,13 +858,39 @@ html {
 
 
         .footer {
-            background: #191D28;
+            background: #0a4c3e;
             padding: 50px 0;
 
+            h5 {
+                color: #fff;
+                font-size: 22px;
+                margin-bottom: 20px;
+            }
+
+            ul {
+
+                li {
+
+                    a {
+                        display: block;
+                        margin-top: 10px;
+                        position: relative;
+                    }
+                }
+            }
+
+            .i {
+                width: 30px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
             .logo {
-                background: #e5e5e5;
+                background: #fff;
                 padding: 10px;
-                border-radius: 10px;
+                // border-radius: 10px;
 
                 img {
                     width: 100%;

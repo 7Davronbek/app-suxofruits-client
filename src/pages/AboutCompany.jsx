@@ -11,8 +11,6 @@ const AboutCompany = () => {
         <AboutContent />
         <WhyWe />
 
-        <div className="vh-100"></div>
-    
     </>
   )
 }

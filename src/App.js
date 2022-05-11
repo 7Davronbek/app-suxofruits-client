@@ -11,7 +11,6 @@ const App = () => {
       <AboutUs />
       <Galary />
       <WhyWe />
-      <div className="vh-100"></div>
     </>
   )
 }

@@ -476,7 +476,7 @@ html {
                 font-weight: 700;
                 font-size: 40px;
                 line-height: 22px;
-                color: #000000;
+                color: $main;
                 position: relative;
 
                 &::after {
@@ -512,6 +512,11 @@ html {
             // background: radial-gradient(circle farthest-corner at 10% 20%, #45b39c 0%, #159b7ee6 90%);
             background-color: #fff;
             position: relative;
+
+            .leftBottom {
+                left: -142px;
+                transform: rotate(34deg) scale(.4);
+            }
 
             .cards {
                 position: relative;
@@ -765,6 +770,66 @@ html {
             h2 {
                 font-size: 25px;
                 line-height: 32px;
+            }
+        }
+
+        .socials {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            top: 50%;
+            left: 30px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            transform: translateY(-80%);
+
+            .i {
+                width: 80px;
+                cursor: pointer;
+                transform: translateX(-200px);
+                transition: all .5s ease-in-out;
+
+                &:hover {
+                    transform: translateY(-10px);
+                }
+
+                &:nth-child(2) {
+                    transition: all .5s ease-in-out 0.2s;
+                }
+
+                &:nth-child(3) {
+                    transition: all .5s ease-in-out 0.4s;
+                }
+
+                &:nth-child(4) {
+                    transition: all .5s ease-in-out 0.6s;
+                }
+            }
+
+            &.active {
+                .i {
+                    transform: translateX(0);
+
+                    &:nth-child(1) {}
+                }
+            }
+        }
+
+
+
+        .footer {
+            background: #191D28;
+            padding: 50px 0;
+
+            .logo {
+                background: #e5e5e5;
+                padding: 10px;
+                border-radius: 10px;
+
+                img {
+                    width: 100%;
+                }
             }
         }
     }

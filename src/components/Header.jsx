@@ -10,7 +10,7 @@ const Header = () => {
                         <div className="col-12">
                             <div className="wrap">
                                 <h1 className='bold'>
-                                    Сухофрукт - то же фрукт 
+                                    Сухофрукт - тоже фрукт 
                                 </h1>
                                 <h5>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea porro asperiores, totam tempora magnam repellat enim maxime nulla est dolor assumenda nemo, laborum corporis, modi quibusdam dicta. Expedita, nobis minus.

@@ -54,7 +54,7 @@ const AboutContent = () => {
                 </div>
 
 
-                <div className="right"><img src="/assets/image/secondary/1.webp" alt="" /></div>
+                <div className="right"><img src="/assets/image/nuts.png" alt="" /></div>
             </div>
 
         </>

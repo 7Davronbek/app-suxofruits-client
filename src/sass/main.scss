@@ -774,7 +774,7 @@ html {
         }
 
         .socials {
-            display: none;
+            display: none !important;
             position: fixed;
             z-index: 9999;
             top: 50%;
@@ -811,7 +811,10 @@ html {
                 .i {
                     transform: translateX(0);
 
-                    &:nth-child(1) {}
+                    &:hover {
+                        transform: translateY(-10px);
+                        transition: all .5s ease-in-out;
+                    }
                 }
             }
         }

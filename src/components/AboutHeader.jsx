@@ -9,8 +9,8 @@ const AboutHeader = () => {
                     <div className="row">
                         <div className="col-12">
                             <div className="wrap headerWrap">
-                                <h1 className="bold">О компании</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor commodi quisquam, eligendi corporis magni aspernatur eaque. Pariatureligendi corporis magni aspernatur eaque. Pariatur ipsa reiciendis enim quam molestiae temporibus blanditiis sapiente consequatur odio eaque, assumenda consequuntur?</p>
+                                <h1 className="bold">Принцип нашего производства </h1>
+                                <p>Принцип нашего производства — это всегда и своевременно производить, и поставлять качественные, полезные свежие фрукты и сухофрукты.</p>
                             </div>
                         </div>
                     </div>

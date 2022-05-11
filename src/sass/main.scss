@@ -10,8 +10,17 @@ $main: #45b39c;
     src: url("../fonts/Fontfabric - Nexa Script Bold.otf") format("truetype");
 }
 
+@font-face {
+    font-family: "Font-Light";
+    src: url("../fonts/Fontfabric - Nexa Script Light.otf") format("truetype");
+}
+
 .bold {
     font-family: "Font-Bold", sans-serif;
+}
+
+.light {
+    font-family: "Font-Light", sans-serif;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap');
@@ -501,6 +510,9 @@ html {
 
             .cards {
                 position: relative;
+                transition: all .4s ease-in-out;
+                // padding: 10px;
+                border-radius: 20px;
 
                 .img {
                     position: relative;
@@ -508,43 +520,47 @@ html {
                     width: 240px;
                     height: 190px;
                     overflow: hidden;
-                    border-radius: 42% 56%, 72% 28% / 42% 42% 56% 48%;
+                    border-radius: 72% 28% 48% 48% / 28% 28% 72% 72%;
                     background-size: cover;
                     background-position: center;
-                    animation: morph 8s linear infinite alternate;
+                    animation: morph 5s linear infinite;
 
-                    &::after {
-                        content: '';
-                        width: 86%;
-                        height: 86%;
-                        position: absolute;
-                        border: 1px solid transparent;
-                        top: 7%;
-                        left: 7%;
-                        border-radius: 10px;
+                    img {
                         transition: all .4s ease-in-out;
                     }
 
-                    &::before {
-                        content: '';
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        right: 0;
-                        bottom: 0;
-                        width: 100%;
-                        height: 100%;
-                        background-color: #45b39c5c;
-                        transition: all .4s ease-in-out;
-                        opacity: 0;
-                        visibility: hidden;
-                        border-radius: 10px;
-                    }
+                    // &::after {
+                    //     content: '';
+                    //     width: 86%;
+                    //     height: 86%;
+                    //     position: absolute;
+                    //     border: 1px solid transparent;
+                    //     top: 7%;
+                    //     left: 7%;
+                    //     border-radius: 10px;
+                    //     transition: all .4s ease-in-out;
+                    // }
+
+                    // &::before {
+                    //     content: '';
+                    //     position: absolute;
+                    //     top: 0;
+                    //     left: 0;
+                    //     right: 0;
+                    //     bottom: 0;
+                    //     width: 100%;
+                    //     height: 100%;
+                    //     background-color: #45b39c5c;
+                    //     transition: all .4s ease-in-out;
+                    //     opacity: 0;
+                    //     visibility: hidden;
+                    //     border-radius: 10px;
+                    // }
 
                     img {
                         height: 100%;
                         object-fit: cover;
-                        animation: morph 8s linear infinite alternate;
+                        animation: morph 5s linear infinite;
                         // border-radius: 10px;
                     }
                 }
@@ -555,6 +571,7 @@ html {
                     left: 15px;
                     font-size: 28px;
                     text-transform: uppercase;
+                    transition: all .2s ease-in-out;
                 }
 
                 &::after {
@@ -570,6 +587,11 @@ html {
 
                 &:hover {
                     cursor: pointer;
+                    box-shadow: 0 0 10px rgba(192, 192, 192, 0.527);
+
+                    h2 {
+                        color: $main;
+                    }
 
                     &::after {
                         background-color: $main;
@@ -701,6 +723,43 @@ html {
                 position: absolute;
                 left: 0;
                 bottom: -133px;
+            }
+        }
+
+        .aboutContent {
+            padding: 70px 0;
+            box-shadow: 0 0 10px silver;
+            position: relative;
+
+            span {
+                color: $main;
+            }
+
+            h1 {
+                font-size: 45px;
+                line-height: 48px;
+                color: $main;
+                text-align: center;
+                position: relative;
+                margin-bottom: 30px;
+                margin-top: 40px;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 44px;
+                    height: 2px;
+                    border-radius: 0.2px;
+                    background-color: $main;
+                    bottom: -7px;
+                    left: 50%;
+                    transform: translateX(-22%);
+                }
+            }
+
+            h2 {
+                font-size: 25px;
+                line-height: 32px;
             }
         }
     }

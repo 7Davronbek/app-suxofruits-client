@@ -13,7 +13,7 @@ const Header = () => {
                                     Сухофрукт - тоже фрукт 
                                 </h1>
                                 <h5>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea porro asperiores, totam tempora magnam repellat enim maxime nulla est dolor assumenda nemo, laborum corporis, modi quibusdam dicta. Expedita, nobis minus.
+                                Агрофирма поставить свежую плодоовощную продукцию, бахчи и виноград, сушенных овощей и фруктов и бобовых культур выращенных в Республике Узбекистан (2021-2022)
                                 </h5>
                             </div>
                         </div>

@@ -28,13 +28,13 @@ const Navbar = () => {
                         <div className="col-7 offset-1">
                             <ul>
                                 <li><Link to='/' className={`${location.pathname === '/' ? 'active' : ''}`}>Главная</Link></li>
-                                <li><Link to='/qwe' className={`${location.pathname === '/qwe' ? 'active' : ''}`} >Продукция</Link></li>
+                                <li><Link to='/production' className={`${location.pathname === '/production' ? 'active' : ''}`} >Продукция</Link></li>
                                 <li><Link to='/about-company' className={`${location.pathname === '/about-company' ? 'active' : ''}`} >О компании</Link></li>
                                 <li><Link to='/qwe3' className={`${location.pathname === '/qwe3' ? 'active' : ''}`} >Контакты</Link></li>
                             </ul>
                         </div>
                         <div className="col-2 ml-auto">
-                            <a href='tel: +998979287878' className="btn btnGradient2 d-flex align-items-center"><span className="me-2"> <FontAwesomeIcon icon={faPhone} /> </span>Appointment me</a>
+                            <a href='tel: +998979287878' className="btn btnGradient2 d-flex align-items-center"><span className="me-3"> <FontAwesomeIcon icon={faPhone} /> </span>Позвонить</a>
                         </div>
                     </div>
                 </div>

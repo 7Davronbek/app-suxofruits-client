@@ -50,7 +50,7 @@ const Galary = () => {
                                         <div className="img">
                                             <img src="/assets/image/galary/5.webp" className='w-100' alt="" />
                                         </div>
-                                        <h2 className="bold">СЛАДОСТИ</h2>
+                                        <h2 className="bold">Сладости</h2>
                                     </div>
                                 </div>
 

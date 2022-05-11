@@ -30,11 +30,13 @@ const Footer = () => {
                         <div className="col-4 ms-auto">
                             <ul className='footerRight'>
                                 <h5>Контактная информация</h5>
-                                <li><a href='#!'>Республика Узбекистан, Самаркандская область, район Ургут, улица Почвон-22</a></li>
-                                <li><a href="tel: +998889305353">+998 88 930 53 53</a></li>
+                                <li><a href='#!'>Тошкент шахри Сергели  тумани,  Қорасув МФЙ, Янги турмуш кўчаси 4-уй</a></li>
+                                <li><a href="tel: +998979287878">+998979287878</a></li>
                                 <li><a className='green' href="urgut.agrofirma@inbox.ru">urgut.agrofirma@inbox.ru</a></li>
                             </ul>
                         </div>
+
+                        <div className="col-1"></div>
 
                     </div>
 

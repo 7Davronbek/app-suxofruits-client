@@ -30,7 +30,7 @@ const Navbar = () => {
                                 <li><Link to='/' className={`${location.pathname === '/' ? 'active' : ''}`}>Главная</Link></li>
                                 <li><Link to='/production' className={`${location.pathname === '/production' ? 'active' : ''}`} >Продукция</Link></li>
                                 <li><Link to='/about-company' className={`${location.pathname === '/about-company' ? 'active' : ''}`} >О компании</Link></li>
-                                <li><Link to='/qwe3' className={`${location.pathname === '/qwe3' ? 'active' : ''}`} >Контакты</Link></li>
+                                <li><Link to='/contacts' className={`${location.pathname === '/contacts' ? 'active' : ''}`} >Контакты</Link></li>
                             </ul>
                         </div>
                         <div className="col-2 ml-auto">

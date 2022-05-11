@@ -12,6 +12,7 @@ import Footer from "./components/Footer";
 import Socials from "./components/Socials";
 import Production from "./pages/Production";
 import ScrollToTop from "./components/ScrollToTop";
+import Contacts from "./pages/Contacts";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -24,6 +25,7 @@ root.render(
       <Route path="/" exact element={<App />} />
       <Route path="/about-company" exact element={<AboutCompany />} />
       <Route path="/production" exact element={<Production />} />
+      <Route path="/contacts" exact element={<Contacts />} />
     </Routes>
 
     <Footer />

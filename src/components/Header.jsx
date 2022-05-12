@@ -1,8 +1,46 @@
 import React from 'react'
-
+import { Background, Parallax } from 'react-parallax';
 const Header = () => {
     return (
         <>
+{/* 
+            <Parallax bgImage="/assets/image/galary/1.webp" className='w-100 vh-100 d-flex align-items-center justify-content-center' bgImageAlt="the cat" strength={400}>
+                Content goes here. Parallax height grows with content height.
+                Content goes here. Parallax height grows with content height.
+                Content goes here. Parallax height grows with content height.
+            </Parallax>
+
+            <Parallax bgImage="/assets/image/galary/1.webp" className='w-100 vh-100 d-flex align-items-center justify-content-center' bgImageAlt="the cat" strength={500}>
+                Content goes here. Parallax height grows with content height.
+                Content goes here. Parallax height grows with content height.
+                Content goes here. Parallax height grows with content height.
+            </Parallax>
+
+            <Parallax bgImage="/assets/image/galary/1.webp" className='w-100 vh-100 d-flex align-items-center justify-content-center' bgImageAlt="the cat" strength={600}>
+                Content goes here. Parallax height grows with content height.
+                Content goes here. Parallax height grows with content height.
+                Content goes here. Parallax height grows with content height.
+            </Parallax>
+
+            <Parallax
+                bgImage="/path/to/another/image"
+                renderLayer={percentage => (
+                    <div
+                        style={{
+                            position: 'absolute',
+                            background: `rgba(255, 125, 0, ${percentage * 1})`,
+                            left: '50%',
+                            top: '50%',
+                            width: percentage * 500,
+                            height: percentage * 500,
+                        }}
+                    />
+                )}
+            >
+                <p>... Content Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus minima tenetur quasi! Aut nam repudiandae deleniti fuga nisi! Molestiae, repellat exercitationem doloremque ullam consequuntur sint quis adipisci ratione aliquam vel!</p>
+            </Parallax>
+ */}
+
 
             <div className="header">
                 <div className="contaienr">
@@ -10,10 +48,10 @@ const Header = () => {
                         <div className="col-12">
                             <div className="wrap">
                                 <h1 className='bold'>
-                                    Сухофрукт - тоже фрукт 
+                                    Сухофрукт - тоже фрукт
                                 </h1>
                                 <h5>
-                                Агрофирма поставить свежую плодоовощную продукцию, бахчи и виноград, сушенных овощей и фруктов и бобовых культур выращенных в Республике Узбекистан (2021-2022)
+                                    Агрофирма поставить свежую плодоовощную продукцию, бахчи и виноград, сушенных овощей и фруктов и бобовых культур выращенных в Республике Узбекистан (2021-2022)
                                 </h5>
                             </div>
                         </div>

@@ -1354,3 +1354,29 @@ html {
         clip-path: inset(0 0 0 100%);
     }
 }
+
+
+#app {
+    overflow: hidden;
+}
+
+#app h1 {
+    --fontSize: 70px;
+    --lineHeight: 90px;
+    width: auto;
+    height: calc(2 * var(--lineHeight));
+    line-height: var(--lineHeight);
+    margin: calc(50vh - var(--lineHeight)) auto 0;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--fontSize);
+    text-shadow: 0 0 5px #ffffff, 0 0 20px #000, 0 0 30px #000;
+}
+
+#app canvas {
+    display: block;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+}

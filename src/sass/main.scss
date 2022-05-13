@@ -1377,6 +1377,6 @@ html {
 #app canvas {
     display: block;
     position: fixed;
-    z-index: -1;
+    z-index: 99999;
     top: 0;
 }

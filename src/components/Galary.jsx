@@ -14,7 +14,7 @@ const Galary = () => {
                                         <div className="img">
                                             <img src="/assets/image/galary/1.webp" className='w-100' alt="" />
                                         </div>
-                                        <h2 className="bold">Сухофрукты</h2>
+                                        <h2 className="">Сухофрукты</h2>
                                     </div>
                                 </div>
 
@@ -23,7 +23,7 @@ const Galary = () => {
                                         <div className="img">
                                             <img src="/assets/image/galary/2.webp" className='w-100' alt="" />
                                         </div>
-                                        <h2 className="bold">Орехи</h2>
+                                        <h2 className="">Орехи</h2>
                                     </div>
                                 </div>
 
@@ -32,7 +32,7 @@ const Galary = () => {
                                         <div className="img">
                                             <img src="/assets/image/galary/3.webp" className='w-100' alt="" />
                                         </div>
-                                        <h2 className="bold">Бобовые</h2>
+                                        <h2 className="">Бобовые</h2>
                                     </div>
                                 </div>
 
@@ -41,7 +41,7 @@ const Galary = () => {
                                         <div className="img">
                                             <img src="/assets/image/galary/4.webp" className='w-100' alt="" />
                                         </div>
-                                        <h2 className="bold">	Фрукты</h2>
+                                        <h2 className="">	Фрукты</h2>
                                     </div>
                                 </div>
 
@@ -50,7 +50,7 @@ const Galary = () => {
                                         <div className="img">
                                             <img src="/assets/image/galary/5.webp" className='w-100' alt="" />
                                         </div>
-                                        <h2 className="bold">Сладости</h2>
+                                        <h2 className="">Сладости</h2>
                                     </div>
                                 </div>
 
@@ -59,7 +59,7 @@ const Galary = () => {
                                         <div className="img">
                                             <img src="/assets/image/galary/6.webp" className='w-100' alt="" />
                                         </div>
-                                        <h2 className="bold">Цукаты</h2>
+                                        <h2 className="">Цукаты</h2>
                                     </div>
                                 </div>
 
@@ -68,7 +68,7 @@ const Galary = () => {
                                         <div className="img">
                                             <img src="/assets/image/galary/1.webp" className='w-100' alt="" />
                                         </div>
-                                        <h2 className="bold">Сухофрукты</h2>
+                                        <h2 className="">Сухофрукты</h2>
                                     </div>
                                 </div>
 
@@ -77,7 +77,7 @@ const Galary = () => {
                                         <div className="img">
                                             <img src="/assets/image/galary/2.webp" className='w-100' alt="" />
                                         </div>
-                                        <h2 className="bold">Орехи</h2>
+                                        <h2 className="">Орехи</h2>
                                     </div>
                                 </div>
 
@@ -86,7 +86,7 @@ const Galary = () => {
                                         <div className="img">
                                             <img src="/assets/image/galary/3.webp" className='w-100' alt="" />
                                         </div>
-                                        <h2 className="bold">Бобовые</h2>
+                                        <h2 className="">Бобовые</h2>
                                     </div>
                                 </div>
 

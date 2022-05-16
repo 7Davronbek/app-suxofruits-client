@@ -23,7 +23,7 @@ const Navbar = () => {
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-2">
-                            <Link to='/' className="img"><h6 className=""><span className='bold'>Eko</span>frukt</h6></Link>
+                            <Link to='/' className="img"><h6 className=""><span className='bolds'>Eko</span>frukt</h6></Link>
                         </div>
                         <div className="col-7 offset-1">
                             <ul>

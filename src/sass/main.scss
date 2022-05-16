@@ -616,7 +616,6 @@ html {
 
         .galary {
             padding: 80px 0 80px;
-            // background: radial-gradient(circle farthest-corner at 10% 20%, #45b39c 0%, #159b7ee6 90%);
             background-color: #fff;
             position: relative;
 
@@ -652,7 +651,6 @@ html {
             .cards {
                 position: relative;
                 transition: all .4s ease-in-out;
-                // padding: 10px;
                 border-radius: 20px;
 
                 .img {
@@ -670,34 +668,6 @@ html {
                         transition: all .4s ease-in-out;
                     }
 
-                    // &::after {
-                    //     content: '';
-                    //     width: 86%;
-                    //     height: 86%;
-                    //     position: absolute;
-                    //     border: 1px solid transparent;
-                    //     top: 7%;
-                    //     left: 7%;
-                    //     border-radius: 10px;
-                    //     transition: all .4s ease-in-out;
-                    // }
-
-                    // &::before {
-                    //     content: '';
-                    //     position: absolute;
-                    //     top: 0;
-                    //     left: 0;
-                    //     right: 0;
-                    //     bottom: 0;
-                    //     width: 100%;
-                    //     height: 100%;
-                    //     background-color: #45b39c5c;
-                    //     transition: all .4s ease-in-out;
-                    //     opacity: 0;
-                    //     visibility: hidden;
-                    //     border-radius: 10px;
-                    // }
-
                     img {
                         height: 100%;
                         object-fit: cover;
@@ -712,6 +682,7 @@ html {
                     left: 50px;
                     font-size: 30px;
                     font-style: italic;
+                    color: #000;
                     font-weight: 600;
                     // text-transform: uppercase;
                     transition: all .2s ease-in-out;
@@ -857,7 +828,7 @@ html {
             position: relative;
 
             h1 {
-                font-size: 40px;
+                font-size: 45px;
                 line-height: 48px;
                 color: #fff;
                 margin-bottom: 20px;
@@ -867,6 +838,7 @@ html {
                 letter-spacing: .5px;
                 color: #fff;
                 line-height: 30px;
+                font-size: 17px;
             }
 
             .headerWrap {
@@ -1158,6 +1130,16 @@ html {
                         font-size: 30px;
                     }
                 }
+            }
+        }
+
+        .catalogHeader {
+            // background: linear-gradient(45deg, #0000000f, #00000026);
+            background-image: url(../images/catalogBg.webp);
+
+            .headerWrap {
+                width: 80%;
+                backdrop-filter: blur(200px);
             }
         }
 

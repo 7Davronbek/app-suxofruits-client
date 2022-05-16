@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar"
 import ScrollToTop from "./components/ScrollToTop"
 // import Socials from "./components/Socials"
 import AboutCompany from "./pages/AboutCompany"
+import CatalogId from "./pages/CatalogId"
 import Contacts from "./pages/Contacts"
 import Main from "./pages/Main"
 import Production from "./pages/Production"
@@ -26,6 +27,7 @@ const App = () => {
           <Route path="/about-company" exact component={AboutCompany} />
           <Route path="/production" exact component={Production} />
           <Route path="/contacts" exact component={Contacts} />
+          <Route path="/catalog/1" exact component={CatalogId} />
         </Switch>
 
         <Footer />

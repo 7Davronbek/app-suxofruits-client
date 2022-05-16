@@ -38,31 +38,58 @@ const Portfolio = () => {
                         <img src="/assets/image/portfolio/9.jpg" alt="" />
                     </div>
                     <div className="image-box">
-                        <img src="/assets/image/portfolio/1.jpg" alt="" />
+                        <img src="/assets/image/portfolio/10.jpg" alt="" />
                     </div>
                     <div className="image-box">
-                        <img src="/assets/image/portfolio/8.jpg" alt="" />
+                        <img src="/assets/image/portfolio/11.jpg" alt="" />
                     </div>
                     <div className="image-box">
-                        <img src="/assets/image/portfolio/9.jpg" alt="" />
+                        <img src="/assets/image/portfolio/12.jpg" alt="" />
                     </div>
                     <div className="image-box">
-                        <img src="/assets/image/portfolio/7.jpg" alt="" />
+                        <img src="/assets/image/portfolio/13.jpg" alt="" />
                     </div>
                     <div className="image-box">
-                        <img src="/assets/image/portfolio/6.jpg" alt="" />
+                        <img src="/assets/image/portfolio/14.jpg" alt="" />
                     </div>
                     <div className="image-box">
-                        <img src="/assets/image/portfolio/5.jpg" alt="" />
+                        <img src="/assets/image/portfolio/20.jpg" alt="" />
                     </div>
                     <div className="image-box">
-                        <img src="/assets/image/portfolio/4.jpg" alt="" />
+                        <img src="/assets/image/portfolio/16.jpeg" alt="" />
                     </div>
                     <div className="image-box">
-                        <img src="/assets/image/portfolio/3.jpg" alt="" />
+                        <img src="/assets/image/portfolio/17.jpg" alt="" />
                     </div>
                     <div className="image-box">
-                        <img src="/assets/image/portfolio/2.jpg" alt="" />
+                        <img src="/assets/image/portfolio/18.jpg" alt="" />
+                    </div>
+                    <div className="image-box">
+                        <img src="/assets/image/portfolio/19.webp" alt="" />
+                    </div>
+                    <div className="image-box">
+                        <img src="/assets/image/portfolio/15.jpg" alt="" />
+                    </div>
+                    <div className="image-box">
+                        <img src="/assets/image/portfolio/21.jpg" alt="" />
+                    </div>
+                    <div className="image-box">
+                        <img src="/assets/image/portfolio/22.jpg" alt="" />
+                    </div>
+                    <div className="image-box">
+                        <img src="/assets/image/portfolio/22.jpg" alt="" />
+                    </div>
+                    <div className="image-box">
+                        <img src="/assets/image/portfolio/23.jpg" alt="" />
+                    </div>
+                    <div className="image-box">
+                        <img src="/assets/image/portfolio/24.jpg" alt="" />
+                    </div>
+                    <div className="image-box">
+                        <img src="/assets/image/portfolio/25.jpg" alt="" />
+                    </div>
+                    <div className="image-box">
+                        <img src="/assets/image/portfolio/26.jpg" alt="" />
                     </div>
                 </div>
 

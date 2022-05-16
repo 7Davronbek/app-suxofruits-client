@@ -7,12 +7,12 @@ const WhyWe = () => {
             <div className="whyWe">
                 <div className="container">
                     <div className="row">
-                        <div className="col-12">
+                        <div className="col-12 zed">
                             <h1 className="bold">Почему мы?</h1>
                         </div>
                     </div>
                     <div className="row justify-content-center">
-                        <div className="col-4 h-100">
+                        <div className="col-4 zed h-100">
                             <div className="cards topCards">
                                 <div className="top">
                                     <lord-icon
@@ -26,7 +26,7 @@ const WhyWe = () => {
                                 <h5>ОПТИМАЛЬНОЕ СООТНОШЕНИЕ ЦЕНЫ И КАЧЕСТВА ТОВАРА</h5>
                             </div>
                         </div>
-                        <div className="col-4 h-100">
+                        <div className="col-4 zed h-100">
                             <div className="cards topCards">
                                 <div className="top">
                                     <lord-icon
@@ -42,7 +42,7 @@ const WhyWe = () => {
                         </div>
                     </div>
                     <div className="row mt-4 justify-content-center">
-                        <div className="col-3 h-100">
+                        <div className="col-3 zed h-100">
                             <div className="cards">
                                 <div className="top">
                                     <lord-icon
@@ -56,7 +56,7 @@ const WhyWe = () => {
                                 <h5>ШИРОКИЙ АССОРТИМЕНТ</h5>
                             </div>
                         </div>
-                        <div className="col-3 h-100">
+                        <div className="col-3 zed h-100">
                             <div className="cards">
                                 <div className="top">
                                     <lord-icon
@@ -70,7 +70,7 @@ const WhyWe = () => {
                                 <h5>	БЕСПЕРЕБОЙНЫЕ ПОСТАВКИ</h5>
                             </div>
                         </div>
-                        <div className="col-3 h-100">
+                        <div className="col-3 zed h-100">
                             <div className="cards">
                                 <div className="top">
 
@@ -88,7 +88,8 @@ const WhyWe = () => {
                         </div>
                     </div>
                 </div>
-                <div className="right"><img src="/assets/image/nuts.png" alt="" /></div>
+                <div className="right"><img src="/assets/image/secondary/3.png" alt="" /></div>
+                <div className="blur"></div>
             </div>
 
         </>

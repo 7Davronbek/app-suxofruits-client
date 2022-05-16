@@ -26,8 +26,8 @@ const AboutUs = () => {
                     </div>
                 </div>
 
-                <div className="left"><img src="/assets/image/nuts.png" alt="" /></div>
-                <div className="right"><img src="/assets/image/nuts.png" alt="" /></div>
+                <div className="left"><img src="/assets/image/secondary/5.png" alt="" /></div>
+                <div className="right"><img src="/assets/image/secondary/1.png" alt="" /></div>
             </div>
 
         </>

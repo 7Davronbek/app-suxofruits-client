@@ -95,7 +95,7 @@ const Galary = () => {
                     </div>
                 </div>
                 
-                <div className="leftBottom"><img src="/assets/image/secondary/arbuz.png" alt="" /></div>
+                <div className="leftBottom"><img src="/assets/image/secondary/4.png" alt="" /></div>
             </div>
 
         </>

@@ -51,11 +51,16 @@ $main: #45b39c;
 }
 
 .bold {
-    font-family: "Font-Bold", sans-serif;
+    font-style: italic;
+    font-weight: 600;
 }
 
 .light {
     font-family: "Font-Light", sans-serif;
+}
+
+#root {
+    overflow-x: hidden
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,600;1,500&display=swap');
@@ -403,6 +408,10 @@ html {
                 }
             }
 
+            .btn {
+                font-weight: 600;
+            }
+
             ul {
                 display: flex;
 
@@ -410,7 +419,7 @@ html {
                     margin-right: 40px;
 
                     a {
-                        font-weight: 500;
+                        font-weight: 600;
                         font-size: 25px;
                         line-height: 33px;
                         color: #163561;
@@ -523,6 +532,25 @@ html {
             // box-shadow: inset 0 0 10px #c0c0c0cf;
             position: relative;
 
+            .right {
+                width: 200px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .left {
+                width: 250px;
+                left: -28px;
+                top: -34px;
+                transform: rotate(0);
+
+                img {
+                    width: 100%;
+                }
+            }
+
             img {
                 border-radius: 15px;
             }
@@ -569,8 +597,13 @@ html {
             position: relative;
 
             .leftBottom {
-                left: -142px;
-                transform: rotate(34deg) scale(.4);
+                transform: rotate(34deg);
+                width: 210px;
+                left: -18px;
+
+                img {
+                    width: 100%;
+                }
             }
 
             .cards {
@@ -686,6 +719,29 @@ html {
             background-attachment: fixed;
             background-position: center;
             position: relative;
+
+            .right {
+                z-index: 10;
+                width: 200px;
+                right: -61px;
+                transform: rotate(-18deg);
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .blur {
+                position: absolute;
+                background: #ffffff12;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                backdrop-filter: blur(10px);
+            }
 
             .cards {
                 background: #ffffff52;

@@ -10,6 +10,7 @@ import CatalogId from "./pages/CatalogId"
 import Contacts from "./pages/Contacts"
 import Main from "./pages/Main"
 import Production from "./pages/Production"
+import SeeCatalog from "./pages/SeeCatalog"
 
 
 const App = () => {
@@ -28,7 +29,7 @@ const App = () => {
           <Route path="/production" exact component={Production} />
           <Route path="/contacts" exact component={Contacts} />
           <Route path="/catalog/1" exact component={CatalogId} />
-          <Route path="/see-catalog/1" exact component={CatalogId} />
+          <Route path="/see-catalog/1" exact component={SeeCatalog} />
         </Switch>
 
         <Footer />

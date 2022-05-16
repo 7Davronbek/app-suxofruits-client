@@ -46,13 +46,13 @@ const AboutContent = () => {
                             <h2 className="mt-3">Р.Эгамбердиев торговый представитель нашего компании в внешнеторговых отношениях.</h2>
                         </div>
                         <div className="col-5">
-                            <div className="img"><img src="/assets/image/director.jpg" className='w-100' alt="" /></div>
+                            <div className="img"><img src="/assets/image/director2.jpg" className='w-100' alt="" /></div>
                         </div>
                     </div>
                 </div>
 
 
-                <div className="right"><img src="/assets/image/nuts.png" alt="" /></div>
+                <div className="right"><img src="/assets/image/secondary/2.webp" alt="" /></div>
             </div>
 
         </>

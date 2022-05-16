@@ -7,6 +7,11 @@ const Galary = () => {
             <div className="galary">
                 <div className="container">
                     <div className="row">
+                        <div className="col-12">
+                            <h1 className="bold">Каталог</h1>
+                        </div>
+                    </div>
+                    <div className="row">
                         <div className="col-10 mx-auto">
                             <div className="row">
                                 <div className="col-lg-4 col-md-6 mb-5">

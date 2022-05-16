@@ -9,12 +9,12 @@ const AboutUs = () => {
                     <div className="row justify-content-center align-items-center">
                         <div className="col-5">
                             <div className="d-flex align-items-end">
-                                <img className='me-3' src="/assets/image/aboutUs/1.png" alt="" />
-                                <img src="/assets/image/aboutUs/2.png" alt="" />
+                                <img className='me-3 first' src="/assets/image/aboutUs/1.jpg" alt="" />
+                                <img className='second' src="/assets/image/aboutUs/4.jpg" alt="" />
                             </div>
                             <div className="d-flex align-items-start mt-3">
-                                <img className='me-3' src="/assets/image/aboutUs/3.png" alt="" />
-                                <img src="/assets/image/aboutUs/4.png" alt="" />
+                                <img className='me-3 third' src="/assets/image/aboutUs/2.jpg" alt="" />
+                                <img className='fourth' src="/assets/image/aboutUs/3.jpg" alt="" />
                             </div>
                         </div>
                         <div className="col-5">

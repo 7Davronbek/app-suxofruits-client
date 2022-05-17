@@ -1307,6 +1307,41 @@ html {
             }
         }
 
+        .seeCatalog {
+            padding: 90px 0;
+            background-color: #fff;
+
+            h2 {
+                font-size: 45px;
+                color: #43b29a;
+                margin-bottom: 25px;
+            }
+
+            h5 {
+                font-size: 22px;
+                font-weight: 600;
+                margin-bottom: 20px;
+                line-height: 30px;
+            }
+
+            .rightWrap {
+                padding-left: 40px;
+            }
+
+            .leftWrap {
+                height: 400px;
+                border-radius: 20px;
+
+                img {
+                    object-fit: cover;
+                    width: 100% !important;
+                    height: 100% !important;
+                    border-radius: 20px;
+                    cursor: pointer;
+                }
+            }
+        }
+
         .footer {
             background: #0a4c3e;
             padding: 70px 0 30px;

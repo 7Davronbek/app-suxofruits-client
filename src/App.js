@@ -12,7 +12,6 @@ import Main from "./pages/Main"
 import Production from "./pages/Production"
 import SeeCatalog from "./pages/SeeCatalog"
 
-
 const App = () => {
 
   return (
@@ -34,6 +33,7 @@ const App = () => {
 
         <Footer />
       </Router>
+
     </>
   )
 }

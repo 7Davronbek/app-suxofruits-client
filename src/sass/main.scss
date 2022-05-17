@@ -518,6 +518,17 @@ html {
                 }
             }
 
+            h1 {
+                margin-bottom: 30px !important;
+            }
+
+            h4 {
+                font-size: 33px;
+                font-weight: 600;
+                color: #fff;
+                margin-bottom: 20px;
+            }
+
             .svg {
                 position: absolute;
                 width: 100%;
@@ -1082,7 +1093,11 @@ html {
 
         .contactsHeader {
             background-image: url(../images/contacts2.png);
-            height: 70vh;
+            height: 80vh;
+
+            .secondary {
+                height: 470px;
+            }
 
             h1 {
                 font-weight: 700;
@@ -1091,6 +1106,7 @@ html {
                 color: #000;
                 text-align: center;
                 position: relative;
+                margin-bottom: 120px !important;
 
                 &::after {
                     content: '';
@@ -1104,14 +1120,86 @@ html {
                 }
             }
 
-            .headerWrap {
-                background-color: #45b39c1f;
-                border-color: $main;
+            .wrap {
                 margin-bottom: 100px;
+                text-align: center;
+                margin: 0 auto;
+                background-color: #a0ddd0eb;
+                border: 2px solid #ffffffb8;
+                padding: 100px 100px;
+                border-color: $main;
+                border-radius: 36px;
+                box-shadow: 0 0 10px #c0c0c069;
 
                 .icon {
                     background-color: #163561;
                 }
+            }
+
+            .form-control {
+                background: transparent;
+                border: none;
+                box-shadow: none;
+                font-size: 22px;
+                color: #000;
+                border-bottom: 2px solid #0a4c3e;
+                margin-bottom: 15px;
+                // text-transform: uppercase;
+            }
+
+
+            button {
+                padding: 15px 25px;
+                border: unset;
+                border-radius: 15px;
+                color: #212121;
+                z-index: 1;
+                background: #e8e8e8;
+                position: relative;
+                font-weight: 1000;
+                font-size: 17px;
+                -webkit-box-shadow: 4px 8px 19px -3px $main;
+                box-shadow: 4px 8px 19px -3px $main;
+                transition: all 250ms;
+                overflow: hidden;
+                display: block;
+                margin-left: auto;
+                font-weight: 600;
+                padding: 15px 34px;
+                text-transform: uppercase;
+                font-size: 16px;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 0;
+                    border-radius: 15px;
+                    background-color: #0a4c3e;
+                    z-index: -1;
+                    -webkit-box-shadow: 4px 8px 19px -3px $main;
+                    box-shadow: 4px 8px 19px -3px $main;
+                    transition: all 250ms
+                }
+
+                &:hover {
+                    color: #e8e8e8;
+
+                    &::before {
+                        width: 100%;
+                    }
+                }
+
+            }
+
+            h3 {
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 35px;
+                color: #163561;
+                margin-bottom: 25px;
             }
 
             a {

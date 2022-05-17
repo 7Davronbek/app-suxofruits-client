@@ -6,12 +6,12 @@ const ContactsHeader = () => {
 
             <div className="contactsHeader headerTop">
                 <div className="container">
-                    <div className="row">
+                    <div className="row align-items-center justify-content-center">
                         <div className="col-12">
                             <h1 className="bold">Контакты</h1>
                         </div>
-                        <div className="col-12">
-                            <div className="wrap headerWrap">
+                        <div className="col-5">
+                            <div className="wrap ">
                                 <a href='tel: +998998190007 ' className="d-flex align-items-center phone ">
                                     <i className='me-4'><img src="/assets/icon/phone.png" alt="" /></i>
                                     <span>+998 (99) 819-00-07 </span>
@@ -28,11 +28,25 @@ const ContactsHeader = () => {
                                 <div className="d-flex align-items-center mt-4 ms-3">
 
                                     <a target="_blank" rel="noreferrer" href='https://www.facebook.com/profile.php?id=100009057463429'><i className="icon cursor icon-fb"></i></a>
-                                    <a  target="_blank" rel="noreferrer" href='https://www.instagram.com/ekofrukt.uz/' ><i className="icon cursor mx-5 icon-insta"></i></a>
+                                    <a target="_blank" rel="noreferrer" href='https://www.instagram.com/ekofrukt.uz/' ><i className="icon cursor mx-5 icon-insta"></i></a>
                                     <a target="_blank" rel="noreferrer" href='https://t.me/uavsoffice/'><i className="icon cursor icon-tg"></i></a>
 
                                 </div>
 
+                            </div>
+                        </div>
+
+                        <div className="col-5">
+                            <div className="wrap secondary">
+                                <h3>ОСТАВИТЬ ЗАЯВКУ</h3>
+                                
+                                <form>
+                                    <input  required type="text" className='form-control' placeholder='Ваше имя*' />
+                                    <input  required type="text" className='form-control' placeholder='Ваш номер*' />
+                                    <textarea required  type="text" className='form-control' placeholder='Тема консультации*' />
+
+                                    <button>Отправить</button>
+                                </form>
                             </div>
                         </div>
                     </div>

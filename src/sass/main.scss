@@ -1081,7 +1081,7 @@ html {
         }
 
         .contactsHeader {
-            background-image: url(../images/contacts.png);
+            background-image: url(../images/contacts2.png);
             height: 70vh;
 
             h1 {
@@ -1152,6 +1152,7 @@ html {
 
             .cards {
                 position: relative;
+
                 .img {
                     overflow: hidden;
                     border-radius: 20px;
@@ -1192,9 +1193,9 @@ html {
                 &:hover {
 
                     // .text {
-                        // background: linear-gradient(0deg, #000, rgba(0, 0, 0, 0.658));
+                    // background: linear-gradient(0deg, #000, rgba(0, 0, 0, 0.658));
                     // }
-                    
+
                     .img {
 
                         img {

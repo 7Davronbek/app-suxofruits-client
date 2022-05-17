@@ -27,9 +27,9 @@ const ContactsHeader = () => {
 
                                 <div className="d-flex align-items-center mt-4 ms-3">
 
-                                    <div className="icon cursor icon-fb"></div>
-                                    <div className="icon cursor mx-5 icon-insta"></div>
-                                    <div className="icon cursor icon-tg"></div>
+                                    <a target="_blank" rel="noreferrer" href='https://www.facebook.com/profile.php?id=100009057463429'><i className="icon cursor icon-fb"></i></a>
+                                    <a  target="_blank" rel="noreferrer" href='https://www.instagram.com/ekofrukt.uz/' ><i className="icon cursor mx-5 icon-insta"></i></a>
+                                    <a target="_blank" rel="noreferrer" href='https://t.me/uavsoffice/'><i className="icon cursor icon-tg"></i></a>
 
                                 </div>
 

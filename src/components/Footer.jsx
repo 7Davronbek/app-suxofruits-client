@@ -31,7 +31,7 @@ const Footer = () => {
                             <ul className='footerRight'>
                                 <h5>Контактная информация</h5>
                                 <li><a href='#!'>Тошкент шахри Сергели  тумани,  Қорасув МФЙ, Янги турмуш кўчаси 4-уй</a></li>
-                                <li><a href="tel: +998979287878">+998979287878</a></li>
+                                <li><a href="tel: +998998190007">+998 (99) 819-00-07</a></li>
                                 <li><a className='green' href="urgut.agrofirma@inbox.ru">urgut.agrofirma@inbox.ru</a></li>
                             </ul>
                         </div>

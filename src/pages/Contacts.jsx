@@ -14,6 +14,7 @@ const Contacts = () => {
       {isLoading ?
         <>
           <div className="loader">
+            <div className="img"><h6 className=""><span className='bolds'>Eko</span>frukt</h6></div>
 
             <div id="wifi-loader">
               <svg className="circle-outer" viewBox="0 0 86 86">

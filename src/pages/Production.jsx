@@ -15,6 +15,7 @@ const Production = () => {
       {isLoading ?
         <>
           <div className="loader">
+            <div className="img"><h6 className=""><span className='bolds'>Eko</span>frukt</h6></div>
 
             <div id="wifi-loader">
               <svg className="circle-outer" viewBox="0 0 86 86">
@@ -31,7 +32,7 @@ const Production = () => {
                 <circle className="front" cx="17" cy="17" r="14"></circle>
               </svg>
             </div>
-          </div>   
+          </div>
         </>
         :
         <>

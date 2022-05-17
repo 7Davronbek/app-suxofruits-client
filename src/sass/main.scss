@@ -991,6 +991,19 @@ html {
         .productionHeader {
             background-image: url(../images/headerBg.jpg);
             background-size: contain;
+
+            .blurs {
+                backdrop-filter: blur(15px);
+            }
+
+            .wrap {
+                backdrop-filter: inherit;
+                background: #00000026;
+
+                p {
+                    font-size: 18px;
+                }
+            }
         }
 
         .portfolio {
@@ -1093,7 +1106,7 @@ html {
 
         .contactsHeader {
             background-image: url(../images/contacts2.png);
-            height: 80vh;
+            height: 85vh;
 
             .secondary {
                 height: 470px;
@@ -1294,7 +1307,6 @@ html {
             }
         }
 
-
         .footer {
             background: #0a4c3e;
             padding: 70px 0 30px;
@@ -1419,6 +1431,23 @@ html {
     z-index: 999999;
     position: fixed;
     overflow: hidden;
+
+
+    h6 {
+        margin-right: 35px;
+        color: #000;
+        font-weight: bold;
+        font-weight: 600;
+        font-size: 32px;
+        font-style: italic;
+        user-select: none;
+
+        span {
+            color: $main;
+            font-size: 48px;
+            font-style: normal;
+        }
+    }
 }
 
 #wifi-loader {

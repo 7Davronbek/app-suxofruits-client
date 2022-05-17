@@ -6,18 +6,18 @@ import WhyWe from '../components/WhyWe';
 
 const Main = () => {
     const [isLoading, setIsLoading] = useState(true);
-  
+
     useEffect(() => {
-      setTimeout(() => {
-        setIsLoading(false);
-      }, 1500);
+        setTimeout(() => {
+            setIsLoading(false);
+        }, 1500);
     }, []);
     return (
         <>
             {isLoading ?
                 <>
                     <div className="loader">
-
+                        <div className="img"><h6 className=""><span className='bolds'>Eko</span>frukt</h6></div>
                         <div id="wifi-loader">
                             <svg className="circle-outer" viewBox="0 0 86 86">
                                 <circle className="back" cx="43" cy="43" r="40"></circle>

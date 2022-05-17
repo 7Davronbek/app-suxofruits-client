@@ -12,9 +12,9 @@ const ContactsHeader = () => {
                         </div>
                         <div className="col-12">
                             <div className="wrap headerWrap">
-                                <a href='tel: +998889305353' className="d-flex align-items-center phone ">
+                                <a href='tel: +998998190007 ' className="d-flex align-items-center phone ">
                                     <i className='me-4'><img src="/assets/icon/phone.png" alt="" /></i>
-                                    <span>+998 97 928-78-78</span>
+                                    <span>+998 (99) 819-00-07 </span>
                                 </a>
                                 <a href='urgut.agrofirma@inbox.ru' className="d-flex align-items-center  mt-3">
                                     <i className='me-4'><img src="/assets/icon/email.png" alt="" /></i>

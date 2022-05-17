@@ -10,9 +10,9 @@ const Footer = () => {
                         <div className="col-2 offset-1">
                             <div className="logo"><h6 className=""><span className='bolds'>Eko</span>frukt</h6></div>
                             <div className="d-flex align-items-center justify-content-center mt-3">
-                                <div className="icon cursor icon-tg"></div>
-                                <div className="icon cursor mx-3 icon-insta"></div>
-                                <div className="icon cursor icon-fb"></div>
+                                <a target="_blank" rel="noreferrer" href='https://t.me/uavsoffice/' className=""> <i className="icon icon-tg"></i></a>
+                                <a target="_blank" rel="noreferrer" href='https://www.instagram.com/ekofrukt.uz/' className=""><i className="icon cursor mx-3 icon-insta"></i></a>
+                                <a target="_blank" rel="noreferrer" href='https://www.facebook.com/profile.php?id=100009057463429' className=""><i className="icon cursor icon-fb"></i></a>
 
                             </div>
                         </div>

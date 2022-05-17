@@ -34,7 +34,7 @@ const Navbar = () => {
                             </ul>
                         </div>
                         <div className="col-2 ml-auto">
-                            <a href='tel: +998979287878' className="btn btnGradient2 d-flex align-items-center"><span className="me-3"> <FontAwesomeIcon icon={faPhone} /> </span>Позвонить</a>
+                            <a href='tel: +998998190007 ' className="btn btnGradient2 d-flex align-items-center"><span className="me-3"> <FontAwesomeIcon icon={faPhone} /> </span>Позвонить</a>
                         </div>
                     </div>
                 </div>

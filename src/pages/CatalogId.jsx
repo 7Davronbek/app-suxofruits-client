@@ -3,13 +3,13 @@ import CatalogCards from '../components/CatalogCards'
 import CatalogIdHeader from '../components/CatalogIdHeader'
 
 const CatalogId = () => {
-    const [isLoading, setIsLoading] = useState(true);
-  
-    useEffect(() => {
-      setTimeout(() => {
-        setIsLoading(false);
-      }, 1500);
-    }, []);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1500);
+  }, []);
   return (
     <>
       {isLoading ?
@@ -35,8 +35,8 @@ const CatalogId = () => {
         </>
         :
         <>
-        <CatalogIdHeader />
-        <CatalogCards />
+          <CatalogIdHeader />
+          <CatalogCards />
         </>
       }
     </>

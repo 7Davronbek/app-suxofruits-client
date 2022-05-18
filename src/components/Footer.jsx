@@ -13,7 +13,6 @@ const Footer = () => {
                                 <a target="_blank" rel="noreferrer" href='https://t.me/uavsoffice/' className=""> <i className="icon icon-tg"></i></a>
                                 <a target="_blank" rel="noreferrer" href='https://www.instagram.com/ekofrukt.uz/' className=""><i className="icon cursor mx-3 icon-insta"></i></a>
                                 <a target="_blank" rel="noreferrer" href='https://www.facebook.com/profile.php?id=100009057463429' className=""><i className="icon cursor icon-fb"></i></a>
-
                             </div>
                         </div>
 

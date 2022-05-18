@@ -48,6 +48,29 @@ const SeeCatalog = () => {
                                         <h2 className="bold"> Абрикосы</h2>
                                         <h5>Яркий аппетитный фрукт желтого цвета, временами – с красными бочками. Имеет характерное углубление во всю длину плода. Вкус – сладкий, насыщенный, мякоть сочная, с чуть заметной кислинкой. Произрастают в субтропиках. Самые вкусные абрикосы выращены в Самарканде и Ферганской долине. Плоды содержат большое количество калия, витаминов, микроэлементов, пектина. Используют для приготовления соков, джема, варенья, компотов. Особенно ценятся в виде сухофруктов.</h5>
                                         <h5>Абрикос употребляют в свежем виде. измельченные плоды добавляют в кисло-сладкие соусы. В десертах хорошо сочетается с ядрами косточек - миндалем.</h5>
+
+                                        <div className="btnWrap">
+                                            <a target="_blank" rel="noreferrer" href='tel: +998998190007' className='btnGradient2'>Узнать цену</a>
+
+                                            <a target="_blank" rel="noreferrer" href='https://t.me/uavsoffice/'>
+                                                <button className="c-button c-button--gooey"> Написать в телеграм
+                                                    <div className="c-button__blobs">
+                                                        <div></div>
+                                                        <div></div>
+                                                        <div></div>
+                                                    </div>
+                                                </button>
+                                                <svg style={{ display: "block", height: 0, width: 0 }} version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                                    <defs>
+                                                        <filter id="goo">
+                                                            <feGaussianBlur result="blur" stdDeviation="10" in="SourceGraphic"></feGaussianBlur>
+                                                            <feColorMatrix result="goo" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" mode="matrix" in="blur"></feColorMatrix>
+                                                            <feBlend in2="goo" in="SourceGraphic"></feBlend>
+                                                        </filter>
+                                                    </defs>
+                                                </svg>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

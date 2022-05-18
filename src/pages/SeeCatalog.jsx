@@ -5,6 +5,18 @@ import { API_PATH } from '../tools/constants';
 const SeeCatalog = () => {
     const [isLoading, setIsLoading] = useState(true);
 
+    const getAll = () => {
+        fetch(API_PATH + 'api/category')
+            .then(async response => {
+                const data = await response.json();
+                console.log(data);
+            })
+            .catch(error => {
+                console.log(error);
+            });
+
+    }
+
     useEffect(() => {
 
         axios.get(API_PATH + 'api/category')
@@ -15,13 +27,8 @@ const SeeCatalog = () => {
                 console.log(err);
             })
 
-        axios.get(API_PATH + 'api/product')
-            .then((res) => {
-                console.log(res);
-            })
-            .catch((err) => {
-                console.log(err);
-            })
+        getAll()
+
 
         setTimeout(() => {
             setIsLoading(false);

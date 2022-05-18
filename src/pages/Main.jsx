@@ -10,13 +10,40 @@ import { API_PATH } from '../tools/constants';
 
 const Main = () => {
     const [isLoading, setIsLoading] = useState(true);
-    // const [category, setCategory] = useState([])
 
-    // const getCategories = () => {
+    // const getAll = () => {
+    //     fetch(API_PATH + 'api/category')
+    //         .then(async response => {
+    //             const data = await response.json();
+    // console.log(data);
+    //         })
+    //         .catch(error => {
+    // console.log(error);
+    //         });
+
     // }
-    // getCategories()
 
     useEffect(() => {
+
+        fetch("http://ekofrukt.uz/api/product")
+            .then(response => response.json())
+        // .then(json => console.log(json))
+
+        // axios.get("http://ekofrukt.uz/api/product")
+        //     .then((res) => {
+        //         console.log(res);
+        //     })
+
+        // axios.get(API_PATH + 'api/category')
+        //     .then((res) => {
+        //         console.log(res);
+        //     })
+        //     .catch((err) => {
+        //         console.log(err);
+        //     })
+
+        // getAll()
+
 
 
 

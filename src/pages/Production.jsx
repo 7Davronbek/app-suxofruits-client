@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react'
+import Benefits from '../components/Benefits';
+import Galary from '../components/Galary';
 // import Portfolio from '../components/Portfolio'
 import ProductionHeader from '../components/ProductionHeader'
 
@@ -37,6 +39,8 @@ const Production = () => {
         :
         <>
           <ProductionHeader />
+          <Galary />
+          <Benefits />
           {/* <Portfolio /> */}
         </>
       }

@@ -6,7 +6,7 @@ const Footer = () => {
 
             <div className="footer">
                 <div className="container">
-                    <div className="row justify-content-">
+                    <div className="row ">
                         <div className="col-2 offset-1">
                             <div className="logo"><h6 className=""><span className='bolds'>Eko</span>frukt</h6></div>
                             <div className="d-flex align-items-center justify-content-center mt-3">
@@ -41,6 +41,7 @@ const Footer = () => {
                                 <h5>Контактная информация</h5>
                                 <li><a href='#!'>Тошкент шахри Сергели  тумани,  Қорасув МФЙ, Янги турмуш кўчаси 4-уй</a></li>
                                 <li><a href="tel: +998998190007">+998 (99) 819-00-07</a></li>
+                                <li><a href="tel: +998998190007">+998 (97) 928-78-78</a></li>
                                 <li><a className='green' href="urgut.agrofirma@inbox.ru">urgut.agrofirma@inbox.ru</a></li>
                             </ul>
                         </div>

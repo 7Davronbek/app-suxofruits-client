@@ -16,6 +16,10 @@ const ContactsHeader = () => {
                                     <i className='me-4'><img src="/assets/icon/phone.png" alt="" /></i>
                                     <span>+998 (99) 819-00-07 </span>
                                 </a>
+                                <a href='tel: +998979287878 ' className="d-flex align-items-center phone mt-2">
+                                    <i className='me-4'><img src="/assets/icon/phone.png" alt="" /></i>
+                                    <span>+998 (97) 928-78-78 </span>
+                                </a>
                                 <a href='urgut.agrofirma@inbox.ru' className="d-flex align-items-center  mt-3">
                                     <i className='me-4'><img src="/assets/icon/email.png" alt="" /></i>
                                     <span>urgut.agrofirma@inbox.ru</span>

@@ -17,6 +17,15 @@ const Footer = () => {
                             </div>
                         </div>
 
+                        <div className="col-2 offset-2">
+                            <ul className="footerMid">
+                                <h5>Сертификат</h5>
+                                <li className='mt-3'><a href="#!">ISO 45001 : 2018</a></li>
+                                <li className='mt-3'><a href="#!">ISO 22000 : 2018</a></li>
+                                <li className='mt-3'><a href="#!">ISO 9001 : 2015</a></li>
+                            </ul>
+                        </div>
+
                         {/* <div className="col-3 offset-1">
                             <ul className='footerLeft'>
                                 <h5 className="">Меню</h5>

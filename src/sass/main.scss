@@ -690,6 +690,38 @@ html {
                         animation: morph 5s linear infinite;
                         // border-radius: 10px;
                     }
+
+                    &.second {
+                        animation: morph 5s linear infinite 1s;
+
+                        img {
+                            animation: morph 5s linear infinite 1s;
+                        }
+                    }
+
+                    &.third {
+                        animation: morph 5s linear infinite 2s;
+
+                        img {
+                            animation: morph 5s linear infinite 2s;
+                        }
+                    }
+
+                    &.fourth {
+                        animation: morph 5s linear infinite 3s;
+
+                        img {
+                            animation: morph 5s linear infinite 3s;
+                        }
+                    }
+
+                    &.fifth {
+                        animation: morph 5s linear infinite 4s;
+
+                        img {
+                            animation: morph 5s linear infinite 4s;
+                        }
+                    }
                 }
 
                 h2 {
@@ -1347,6 +1379,13 @@ html {
             background: #0a4c3e;
             padding: 70px 0 30px;
 
+            .footerMid {
+
+                a {
+                    font-size: 19px;
+                }
+            }
+
             h6 {
                 color: #ffffffda;
                 text-align: center;
@@ -1443,11 +1482,11 @@ html {
 
     0%,
     100% {
-        border-radius: 42% 56%, 72% 28% / 42% 42% 56% 48%;
+        border-radius: 52% 66%, 72% 0% / 42% 42% 56% 48%;
     }
 
     33% {
-        border-radius: 72% 28% 48% 48% / 28% 28% 72% 72%;
+        border-radius: 82% 38% 58% 48% / 28% 28% 72% 72%;
     }
 
     66% {
@@ -1685,27 +1724,27 @@ html {
 }
 
 
-#app {
-    overflow: hidden;
-}
+// #app {
+//     overflow: hidden;
+// }
 
-#app h1 {
-    --fontSize: 70px;
-    --lineHeight: 90px;
-    width: auto;
-    height: calc(2 * var(--lineHeight));
-    line-height: var(--lineHeight);
-    margin: calc(50vh - var(--lineHeight)) auto 0;
-    text-align: center;
-    color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
-    font-size: var(--fontSize);
-    text-shadow: 0 0 5px #ffffff, 0 0 20px #000, 0 0 30px #000;
-}
+// #app h1 {
+//     --fontSize: 70px;
+//     --lineHeight: 90px;
+//     width: auto;
+//     height: calc(2 * var(--lineHeight));
+//     line-height: var(--lineHeight);
+//     margin: calc(50vh - var(--lineHeight)) auto 0;
+//     text-align: center;
+//     color: #ffffff;
+//     font-family: 'Montserrat', sans-serif;
+//     font-size: var(--fontSize);
+//     text-shadow: 0 0 5px #ffffff, 0 0 20px #000, 0 0 30px #000;
+// }
 
-#app canvas {
-    display: block;
-    position: fixed;
-    z-index: 99999;
-    top: 0;
-}
+// #app canvas {
+//     display: block;
+//     position: fixed;
+//     z-index: 99999;
+//     top: 0;
+// }

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Portfolio from '../components/Portfolio'
+// import Portfolio from '../components/Portfolio'
 import ProductionHeader from '../components/ProductionHeader'
 
 const Production = () => {
@@ -37,7 +37,7 @@ const Production = () => {
         :
         <>
           <ProductionHeader />
-          <Portfolio />
+          {/* <Portfolio /> */}
         </>
       }
     </>

@@ -25,11 +25,13 @@ const Navbar = () => {
                         <div className="col-2">
                             <Link to='/' className="img"><h6 className=""><span className='bolds'>Eko</span>frukt</h6></Link>
                         </div>
-                        <div className="col-7 offset-1">
+                        <div className="col-7 ">
                             <ul>
                                 <li><Link to='/' className={`${location.pathname === '/' ? 'active' : ''}`}>Главная</Link></li>
                                 <li><Link to='/production' className={`${location.pathname === '/production' ? 'active' : ''}`} >Продукция</Link></li>
                                 <li><Link to='/about-company' className={`${location.pathname === '/about-company' ? 'active' : ''}`} >О компании</Link></li>
+                                {/* <li><Link to='/about-company' className={`${location.pathname === '/about-company' ? 'active' : ''}`} >Польза сухофруктов</Link></li> */}
+                                <li><Link to='/photogalary' className={`${location.pathname === '/photogalary' ? 'active' : ''}`} >Фотогаларея</Link></li>
                                 <li><Link to='/contacts' className={`${location.pathname === '/contacts' ? 'active' : ''}`} >Контакты</Link></li>
                             </ul>
                         </div>

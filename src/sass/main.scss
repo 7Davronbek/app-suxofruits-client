@@ -417,6 +417,7 @@ html {
             }
 
             ul {
+                align-items: center;
                 display: flex;
 
                 li {
@@ -424,7 +425,7 @@ html {
 
                     a {
                         font-weight: 600;
-                        font-size: 25px;
+                        font-size: 23px;
                         line-height: 33px;
                         color: #163561;
                         position: relative;

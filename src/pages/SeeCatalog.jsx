@@ -1,9 +1,28 @@
+import axios from 'axios';
 import React, { useEffect, useState } from 'react'
+import { API_PATH } from '../tools/constants';
 
 const SeeCatalog = () => {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
+
+        axios.get(API_PATH + 'api/category')
+            .then((res) => {
+                console.log(res);
+            })
+            .catch((err) => {
+                console.log(err);
+            })
+
+        axios.get(API_PATH + 'api/product')
+            .then((res) => {
+                console.log(res);
+            })
+            .catch((err) => {
+                console.log(err);
+            })
+
         setTimeout(() => {
             setIsLoading(false);
         }, 1500);

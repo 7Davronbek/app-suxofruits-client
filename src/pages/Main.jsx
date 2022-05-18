@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import AboutUs from '../components/AboutUs';
 import Benefits from '../components/Benefits';
@@ -5,14 +6,25 @@ import Galary from '../components/Galary';
 import Header from '../components/Header';
 // import Sertificates from '../components/Sertificates';
 import WhyWe from '../components/WhyWe';
+import { API_PATH } from '../tools/constants';
 
 const Main = () => {
     const [isLoading, setIsLoading] = useState(true);
+    // const [category, setCategory] = useState([])
+
+    // const getCategories = () => {
+    // }
+    // getCategories()
 
     useEffect(() => {
+
+
+
+
         setTimeout(() => {
             setIsLoading(false);
         }, 1500);
+
     }, []);
 
     return (

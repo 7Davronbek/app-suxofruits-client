@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import AboutUs from '../components/AboutUs';
+import Benefits from '../components/Benefits';
 import Galary from '../components/Galary';
 import Header from '../components/Header';
 import WhyWe from '../components/WhyWe';
@@ -42,6 +43,7 @@ const Main = () => {
                     <AboutUs />
                     <Galary />
                     <WhyWe />
+                    <Benefits />
                 </>
             }
         </>

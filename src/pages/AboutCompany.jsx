@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import AboutContent from '../components/AboutContent'
 import AboutHeader from '../components/AboutHeader'
+import Sertificates from '../components/Sertificates'
 import WhyWe from '../components/WhyWe'
 
 const AboutCompany = () => {
@@ -41,6 +42,7 @@ const AboutCompany = () => {
 
           <AboutHeader />
           <AboutContent />
+          <Sertificates />
           <WhyWe />
         </>
       }

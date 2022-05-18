@@ -3,6 +3,7 @@ import AboutUs from '../components/AboutUs';
 import Benefits from '../components/Benefits';
 import Galary from '../components/Galary';
 import Header from '../components/Header';
+// import Sertificates from '../components/Sertificates';
 import WhyWe from '../components/WhyWe';
 
 const Main = () => {
@@ -44,6 +45,7 @@ const Main = () => {
                     <Galary />
                     <WhyWe />
                     <Benefits />
+                    {/* <Sertificates /> */}
                 </>
             }
         </>

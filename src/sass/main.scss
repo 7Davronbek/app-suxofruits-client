@@ -1430,6 +1430,29 @@ html {
             }
         }
 
+        .sertificates {
+            padding: 50px 0 60px;
+
+            h1 {
+                font-size: 40px;
+                text-align: center;
+                color: $main;
+                margin-bottom: 40px;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 44px;
+                    height: 2px;
+                    border-radius: 0.2px;
+                    background-color: $main;
+                    bottom: -7px;
+                    left: 41%;
+                }
+            }
+        }
+
         .footer {
             background: #0a4c3e;
             padding: 70px 0 30px;

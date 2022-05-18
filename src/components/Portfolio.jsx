@@ -77,7 +77,7 @@ const Portfolio = () => {
                         <img src="/assets/image/portfolio/22.jpg" alt="" />
                     </div>
                     <div className="image-box">
-                        <img src="/assets/image/portfolio/22.jpg" alt="" />
+                        <img src="/assets/image/portfolio/5.jpg" alt="" />
                     </div>
                     <div className="image-box">
                         <img src="/assets/image/portfolio/23.jpg" alt="" />
@@ -99,6 +99,29 @@ const Portfolio = () => {
                         <h3>Казахстан, Россия, Кыргызстан, Таджикистан, Украина, Польша, Беларусь, Израиль, Ирак, Китай, Турция, Арабские страны, страны Европы и другие.</h3>
                     </div>
                 </div>
+
+
+                <div className="image-gallary mt-5">
+                    <div className="image-box">
+                        <img src="/assets/image/car/1.jpg" alt="" />
+                    </div>
+                    <div className="image-box">
+                        <img src="/assets/image/car/2.jpg" alt="" />
+                    </div>
+                    <div className="image-box">
+                        <img src="/assets/image/car/3.jpg" alt="" />
+                    </div>
+                    <div className="image-box">
+                        <img src="/assets/image/car/4.jpg" alt="" />
+                    </div>
+                    <div className="image-box">
+                        <img src="/assets/image/car/5.jpg" alt="" />
+                    </div>
+                    <div className="image-box">
+                        <img src="/assets/image/car/6.jpg" alt="" />
+                    </div>
+                </div>
+
             </div>
         </div>
 

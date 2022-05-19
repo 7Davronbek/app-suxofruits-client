@@ -6,13 +6,13 @@ const AboutUs = () => {
 
             <div className="aboutUs">
                 <div className="container">
-                    <div className="row justify-content-center align-items-center">
-                        <div className="col-lg-5">
-                            <div className="d-flex align-items-end">
+                    <div className="row flex-wrap-reverse justify-content-center align-items-center">
+                        <div className="col-lg-5 myCol">
+                            <div className="d-flex align-items-end justify-content-around">
                                 <img className='me-3 first' src="/assets/image/aboutUs/1.jpg" alt="" />
                                 <img className='second' src="/assets/image/aboutUs/4.jpg" alt="" />
                             </div>
-                            <div className="d-flex align-items-start mt-3">
+                            <div className="d-flex align-items-start mt-3 justify-content-around">
                                 <img className='me-3 third' src="/assets/image/aboutUs/2.jpg" alt="" />
                                 <img className='fourth' src="/assets/image/aboutUs/3.jpg" alt="" />
                             </div>

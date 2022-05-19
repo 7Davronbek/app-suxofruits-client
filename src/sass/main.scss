@@ -579,6 +579,13 @@ html {
             // box-shadow: inset 0 0 10px #c0c0c0cf;
             position: relative;
 
+            .myCol {
+
+                @media(max-width: 992px) {
+                    margin-top: 55px;
+                }
+            }
+
             img {
                 object-fit: cover;
             }
@@ -586,21 +593,53 @@ html {
             .first {
                 width: 250px;
                 height: 344px;
+
+                @media(max-width: 1330px) {
+                    width: 50%;
+                }
+
+                @media(max-width: 767px) {
+                    width: 100%;
+                }
             }
 
             .second {
                 width: 270px;
                 height: 270px;
+
+                @media(max-width: 1330px) {
+                    width: 45%;
+                }
+
+                @media(max-width: 767px) {
+                    display: none;
+                }
             }
 
             .third {
                 width: 165px;
                 height: 285px;
+
+                @media(max-width: 1330px) {
+                    width: 45%;
+                }
+
+                @media(max-width: 767px) {
+                    display: none;
+                }
             }
 
             .fourth {
                 width: 360px;
                 height: 360px;
+
+                @media(max-width: 1330px) {
+                    width: 50%;
+                }
+
+                @media(max-width: 767px) {
+                    width: 100%;
+                }
             }
 
             .right {
@@ -622,7 +661,7 @@ html {
                 }
 
                 @media(max-width: 767px) {
-                    left: -80px;
+                    left: -150px;
                 }
             }
 
@@ -646,6 +685,14 @@ html {
                     background-color: $main;
                     bottom: -20px;
                     left: 0;
+
+                    @media(max-width: 992px) {
+                        left: 40%;
+                    }
+                }
+
+                @media(max-width: 992px) {
+                    text-align: center;
                 }
             }
 

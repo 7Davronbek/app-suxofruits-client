@@ -1,4 +1,4 @@
-// import axios from 'axios';
+import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import AboutUs from '../components/AboutUs';
 import Benefits from '../components/Benefits';
@@ -7,7 +7,7 @@ import Galary from '../components/Galary';
 import Header from '../components/Header';
 // import Sertificates from '../components/Sertificates';
 import WhyWe from '../components/WhyWe';
-// import { API_PATH } from '../tools/constants';
+import { API_PATH } from '../tools/constants';
 
 const Main = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -26,7 +26,7 @@ const Main = () => {
 
     useEffect(() => {
 
-        // fetch("http://ekofrukt.uz/api/product/")
+        // fetch("http://ekofrukt.uz/api/product")
         //     .then(response => response.json())
         //     .then(json => console.log(json))
 

@@ -26,22 +26,22 @@ const Main = () => {
 
     useEffect(() => {
 
-        // fetch("http://ekofrukt.uz/api/product")
-        //     .then(response => response.json())
-        //     .then(json => console.log(json))
+        fetch("http://ekofrukt.uz/api/product")
+            .then(response => response.json())
+            .then(json => console.log(json))
 
-        // axios.get("http://ekofrukt.uz/api/product")
-        //     .then((res) => {
-        //         console.log(res);
-        //     })
+        axios.get("http://ekofrukt.uz/api/product")
+            .then((res) => {
+                console.log(res);
+            })
 
-        // axios.get(API_PATH + 'api/category')
-        //     .then((res) => {
-        //         console.log(res);
-        //     })
-        //     .catch((err) => {
-        //         console.log(err);
-        //     })
+        axios.get(API_PATH + 'api/category')
+            .then((res) => {
+                console.log(res);
+            })
+            .catch((err) => {
+                console.log(err);
+            })
 
         // getAll()
 

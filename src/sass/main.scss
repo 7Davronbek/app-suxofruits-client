@@ -739,6 +739,11 @@ html {
                     bottom: -7px;
                     left: 43%;
                 }
+
+                @media(max-width: 767px) {
+                    font-size: 40px;
+                    margin-bottom: 50px;
+                }
             }
 
             .leftBottom {
@@ -775,6 +780,10 @@ html {
                         height: 100%;
                         object-fit: cover;
                         animation: morph 5s linear infinite;
+
+                        @media(max-width: 992px) {
+                            animation: none;
+                        }
                         // border-radius: 10px;
                     }
 
@@ -783,6 +792,14 @@ html {
 
                         img {
                             animation: morph 5s linear infinite 1s;
+
+                            @media(max-width: 992px) {
+                                animation: none;
+                            }
+                        }
+
+                        @media(max-width: 992px) {
+                            animation: none;
                         }
                     }
 
@@ -791,23 +808,53 @@ html {
 
                         img {
                             animation: morph 5s linear infinite 2s;
+
+                            @media(max-width: 992px) {
+                                animation: none;
+                            }
+                        }
+
+                        @media(max-width: 992px) {
+                            animation: none;
                         }
                     }
 
                     &.fourth {
                         animation: morph 5s linear infinite 3s;
-
                         img {
                             animation: morph 5s linear infinite 3s;
+
+                            @media(max-width: 992px) {
+                                animation: none;
+                            }
+                        }
+
+                        @media(max-width: 992px) {
+                            animation: none;
                         }
                     }
 
                     &.fifth {
                         animation: morph 5s linear infinite 4s;
 
+                        @media(max-width: 992px) {
+                            animation: none;
+                        }
+
                         img {
                             animation: morph 5s linear infinite 4s;
                         }
+
+                        @media(max-width: 992px) {
+                            animation: none;
+                        }
+                    }
+
+                    @media(max-width: 992px) {
+                        animation: none;
+                        border-radius: 20px;
+                        width: 100%;
+                        height: 270px;
                     }
                 }
 
@@ -821,6 +868,12 @@ html {
                     font-weight: 600;
                     // text-transform: uppercase;
                     transition: all .2s ease-in-out;
+
+                    @media(max-width: 992px) {
+                        position: relative;
+                        left: 5px;
+                        top: 5px;
+                    }
                 }
 
                 &::after {
@@ -832,6 +885,10 @@ html {
                     bottom: 8px;
                     left: 115px;
                     transition: all .4s ease-in-out;
+
+                    @media(max-width: 992px) {
+                        display: none;
+                    }
                 }
 
                 &:hover {

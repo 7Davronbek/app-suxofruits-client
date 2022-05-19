@@ -13,7 +13,7 @@ const Galary = () => {
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-10 mx-auto">
+                        <div className="col-lg-10 mx-auto">
                             <div className="row justify-content-around">
                                 <Link to='/catalog/1' className="col-lg-4 col-md-6 mb-5">
                                     <div className="cards">

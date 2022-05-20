@@ -1,1 +1,1 @@
-export const API_PATH = "http://ekofrukt.uz/"
+export const API_PATH = "http://ekofrukt.uz/api/"

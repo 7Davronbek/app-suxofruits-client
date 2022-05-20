@@ -1,7 +1,23 @@
-import React from 'react'
+import axios from 'axios'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { API_PATH } from '../tools/constants'
 
 const Galary = () => {
+    const [allCategory, setAllCategory] = useState([])
+
+    const getAllCategory = async () => {
+        await axios.get(API_PATH + 'category')
+            .then((res) => {
+                console.log(res);
+                setAllCategory(res.data)
+            })
+    }
+
+    useEffect(() => {
+        getAllCategory()
+    }, [])
+
     return (
         <>
 
@@ -15,6 +31,21 @@ const Galary = () => {
                     <div className="row">
                         <div className="col-lg-10 mx-auto">
                             <div className="row justify-content-around">
+
+                                {allCategory?.map((item, index) => (
+
+
+                                    <Link to={`/catalog/${item.id}`} key={index} className="col-lg-4 col-md-6 mb-5">
+                                        <div className="cards">
+                                            <div className="img">
+                                                <img src={`${item.image}`} className='w-100' alt="" />
+                                            </div>
+                                            <h2 className="">{item.name}</h2>
+                                        </div>
+                                    </Link>
+
+                                ))}
+
                                 <Link to='/catalog/1' className="col-lg-4 col-md-6 mb-5">
                                     <div className="cards">
                                         <div className="img">

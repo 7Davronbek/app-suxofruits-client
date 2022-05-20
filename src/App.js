@@ -1,6 +1,4 @@
-import { Switch } from "react-router-dom"
-import { Route } from "react-router-dom"
-import { BrowserRouter as Router } from "react-router-dom"
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import Footer from "./components/Footer"
 import Navbar from "./components/Navbar"
 import ScrollToTop from "./components/ScrollToTop"
@@ -14,7 +12,6 @@ import Production from "./pages/Production"
 import SeeCatalog from "./pages/SeeCatalog"
 
 const App = () => {
-
   return (
     <>
 

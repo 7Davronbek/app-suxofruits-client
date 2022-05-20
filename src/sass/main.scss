@@ -784,6 +784,7 @@ html {
                         @media(max-width: 992px) {
                             animation: none;
                         }
+
                         // border-radius: 10px;
                     }
 
@@ -821,7 +822,7 @@ html {
 
                     &.fourth {
                         animation: morph 5s linear infinite 3s;
-                        
+
                         img {
                             animation: morph 5s linear infinite 3s;
 

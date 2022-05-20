@@ -1,6 +1,26 @@
-import React from 'react'
+import axios from 'axios'
+import React, { useState } from 'react'
+import { API_PATH } from '../tools/constants'
 
 const ContactsHeader = () => {
+    const [name, setName] = useState('')
+    const [number, setNumber] = useState('')
+    const [text, setText] = useState('')
+
+    const handleClick = async () => {
+        await axios.post(API_PATH + 'message', {
+            name,
+            number,
+            text
+        })
+        .then((res) => {
+            // console.log(res);  
+        })
+        .catch((err) => {
+            console.log(err);
+        })
+    }
+    
     return (
         <>
 
@@ -43,13 +63,25 @@ const ContactsHeader = () => {
                         <div className="col-5 mb-5">
                             <div className="wrap secondary">
                                 <h3>ОСТАВИТЬ ЗАЯВКУ</h3>
-                                
-                                <form>
-                                    <input  required type="text" className='form-control' placeholder='Ваше имя*' />
-                                    <input  required type="text" className='form-control' placeholder='Ваш номер*' />
-                                    <textarea required  type="text" className='form-control' placeholder='Тема консультации*' />
 
-                                    <button>Отправить</button>
+                                <form onSubmit={e => e.preventDefault()}>
+                                    <input
+                                        name='name'
+                                        value={name}
+                                        onChange={e => setName(e.target.value)}
+                                        required type="text" className='form-control' placeholder='Ваше имя*' />
+                                    <input
+                                        name='number'
+                                        value={number}
+                                        onChange={e => setNumber(e.target.value)}
+                                        required type="text" className='form-control' placeholder='Ваш номер*' />
+                                    <textarea
+                                        name='name'
+                                        value={text}
+                                        onChange={e => setText(e.target.value)}
+                                        required type="text" className='form-control' placeholder='Тема консультации*' />
+
+                                    <button onClick={handleClick}>Отправить</button>
                                 </form>
                             </div>
                         </div>

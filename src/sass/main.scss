@@ -390,7 +390,7 @@ html {
         }
 
         .navBar {
-            display: none;
+            // display: none;
             padding: 60px 0 40px;
             position: fixed;
             width: 100%;
@@ -2122,10 +2122,10 @@ html {
 }
 
 // .fancybox__slide {
-    // background: #fff;
+// background: #fff;
 // }
 
-.carousel__button  {
+.carousel__button {
 
     svg {
         color: $main;

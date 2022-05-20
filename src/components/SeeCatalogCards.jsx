@@ -7,13 +7,26 @@ const SeeCatalogCards = () => {
       <div className="seeCatalogCards">
         <div className="container">
           <div className="row">
-            <div className="col-lg-4 col-md-6">
-              <img src="/assets/image/portfolio/1.jpg" alt="" className="w-100" />
-            </div>
+{/* 
+            {category?.map((item, index) => (
+
+              <Link to={`/see-catalog/${item.id}`} key={index} className="col-lg-4 mb-4">
+                <div className="cards">
+                  <div className="img">
+                    <img src={`${item.image}`} alt="" className="w-100" />
+                  </div>
+                  <div className="text">
+                    <h2>{item.title}</h2>
+                  </div>
+                </div>
+              </Link>
+
+            ))} */}
+
           </div>
         </div>
       </div>
-    
+
     </>
   )
 }

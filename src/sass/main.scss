@@ -1011,7 +1011,6 @@ html {
 
         .headerTop {
             z-index: 99999;
-            height: 50vh;
             background-repeat: no-repeat;
             background-size: cover;
             background-attachment: fixed;
@@ -1020,6 +1019,7 @@ html {
             align-items: center;
             justify-content: center;
             position: relative;
+            padding: 50px;
 
             h1 {
                 font-size: 45px;

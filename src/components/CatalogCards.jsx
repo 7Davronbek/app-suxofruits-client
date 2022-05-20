@@ -7,7 +7,7 @@ const CatalogCards = ({ category }) => {
     // const [change, setChange] = useState(10000)
 
     // const handleClick = (n) => {
-    //     // let m = num / 1000 * n
+        // let m = num / 1000 * n
     //     setChange(num / 1000 * n)
     // }
 

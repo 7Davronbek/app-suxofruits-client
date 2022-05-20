@@ -14,6 +14,13 @@ const CatalogId = (props) => {
       .then((res) => {
         setCategory(res.data.products)
         setCategoryTitle(res.data)
+        setIsLoading(false);
+      })
+      .catch((err) => {
+        console.log(err);
+      })
+      .finally(() => {
+        setIsLoading(false);
       })
   }
 
@@ -23,9 +30,9 @@ const CatalogId = (props) => {
 
 
   useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 1500);
+    // setTimeout(() => {
+    //   setIsLoading(false);
+    // }, 1500);
   }, []);
   return (
     <>

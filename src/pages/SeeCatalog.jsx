@@ -2,6 +2,10 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { API_PATH } from '../tools/constants';
 
+import { Fancybox, Carousel, Panzoom } from "@fancyapps/ui";
+
+import "@fancyapps/ui/dist/fancybox.css";
+
 const SeeCatalog = (props) => {
     const [isLoading, setIsLoading] = useState(true);
     const [product, setProduct] = useState({})
@@ -17,9 +21,17 @@ const SeeCatalog = (props) => {
     // }
 
     const getProduct = async () => {
+        setIsLoading(true);
         await axios.get(API_PATH + `product/${props.match.params.id}`)
             .then((res) => {
                 setProduct(res.data)
+                setIsLoading(false);
+            })
+            .catch((err) => {
+                console.log(err);
+            })
+            .finally(() => {
+                setIsLoading(false);
             })
     }
 
@@ -27,9 +39,8 @@ const SeeCatalog = (props) => {
 
         getProduct()
 
-        setTimeout(() => {
-            setIsLoading(false);
-        }, 1500);
+        // setTimeout(() => {
+        // }, 1500);
     }, []);
 
     return (
@@ -63,8 +74,16 @@ const SeeCatalog = (props) => {
                     <div className="seeCatalog">
                         <div className="container">
                             <div className="row align-items-center  ">
+
                                 <div className="col-5 leftWrap">
-                                    <img src={`${product.image}`} className='w-100' alt="" />
+                                    <a
+                                        href={`${product.image}`}
+                                        data-fancybox="gallery"
+                                    >
+                                        <img src={`${product.image}`} className='w-100' alt="" />
+                                    </a>
+
+
                                 </div>
                                 <div className="col-6 rightWrap">
                                     <h2 className="bold"> {product.title}</h2>

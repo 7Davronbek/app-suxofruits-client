@@ -1536,7 +1536,7 @@ html {
                     width: 100% !important;
                     height: 100% !important;
                     border-radius: 20px;
-                    cursor: pointer;
+                    // cursor: pointer;
                 }
             }
         }
@@ -2119,4 +2119,15 @@ html {
 
 .c-button--gooey:hover .c-button__blobs div {
     transform: scale(1.4) translateY(0) translateZ(0);
+}
+
+// .fancybox__slide {
+    // background: #fff;
+// }
+
+.carousel__button  {
+
+    svg {
+        color: $main;
+    }
 }

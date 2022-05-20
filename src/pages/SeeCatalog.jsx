@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { API_PATH } from '../tools/constants';
 
-import { Fancybox, Carousel, Panzoom } from "@fancyapps/ui";
+// import { Fancybox, Carousel, Panzoom } from "@fancyapps/ui";
 
 import "@fancyapps/ui/dist/fancybox.css";
 

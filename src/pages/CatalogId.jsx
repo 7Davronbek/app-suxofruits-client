@@ -30,9 +30,9 @@ const CatalogId = (props) => {
 
 
   useEffect(() => {
-    // setTimeout(() => {
-    //   setIsLoading(false);
-    // }, 1500);
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1500);
   }, []);
   return (
     <>

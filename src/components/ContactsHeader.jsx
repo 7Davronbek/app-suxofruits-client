@@ -13,14 +13,17 @@ const ContactsHeader = () => {
             number,
             text
         })
-        .then((res) => {
-            // console.log(res);  
-        })
-        .catch((err) => {
-            console.log(err);
-        })
+            .then((res) => {
+                // console.log(res);  
+                setName('');
+                setNumber('')
+                setText('')
+            })
+            .catch((err) => {
+                console.log(err);
+            })
     }
-    
+
     return (
         <>
 

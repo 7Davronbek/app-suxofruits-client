@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CatalogIdHeader = () => {
+const CatalogIdHeader = ({categoryTitle}) => {
   return (
     <>
         <div className="catalogHeader headerTop">

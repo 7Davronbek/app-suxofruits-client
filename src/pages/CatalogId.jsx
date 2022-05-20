@@ -1,9 +1,27 @@
+import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import CatalogCards from '../components/CatalogCards'
 import CatalogIdHeader from '../components/CatalogIdHeader'
+import { API_PATH } from '../tools/constants';
 
-const CatalogId = () => {
+const CatalogId = (props) => {
   const [isLoading, setIsLoading] = useState(true);
+  const [category, setCategory] = useState([])
+  const [categoryTitle, setCategoryTitle] = useState([])
+
+  const getCategory = async () => {
+    await axios.get(API_PATH + `category/${props.match.params.id}`)
+      .then((res) => {
+        console.log(res);
+        setCategory(res.data.products)
+        setCategoryTitle(res.data)
+      })
+  }
+
+  useEffect(() => {
+    getCategory()
+  }, [])
+
 
   useEffect(() => {
     setTimeout(() => {
@@ -36,8 +54,8 @@ const CatalogId = () => {
         </>
         :
         <>
-          <CatalogIdHeader />
-          <CatalogCards />
+          <CatalogIdHeader categoryTitle={categoryTitle} />
+          <CatalogCards category={category} />
         </>
       }
     </>

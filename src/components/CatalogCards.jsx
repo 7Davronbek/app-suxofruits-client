@@ -2,7 +2,8 @@
 
 import { Link } from "react-router-dom"
 
-const CatalogCards = () => {
+const CatalogCards = ({category}) => {
+    console.log(category);
     // let num = 10000
     // const [change, setChange] = useState(10000)
 

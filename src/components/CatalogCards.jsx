@@ -2,8 +2,7 @@
 
 import { Link } from "react-router-dom"
 
-const CatalogCards = ({category}) => {
-    console.log(category);
+const CatalogCards = ({ category }) => {
     // let num = 10000
     // const [change, setChange] = useState(10000)
 
@@ -18,72 +17,22 @@ const CatalogCards = ({category}) => {
             <div className="catalogCards">
                 <div className="container">
                     <div className="row">
-                        <Link to='/see-catalog/1' className="col-lg-4 mb-4">
-                            <div className="cards">
-                                <div className="img">
-                                    <img src="/assets/image/category/1.jpg" alt="" className="w-100" />
+
+                        {category?.map((item, index) => (
+
+                            <Link to={`/see-catalog/${item.id}`} key={index} className="col-lg-4 mb-4">
+                                <div className="cards">
+                                    <div className="img">
+                                        <img src={`${item.image}`} alt="" className="w-100" />
+                                    </div>
+                                    <div className="text">
+                                        <h2>{item.title}</h2>
+                                    </div>
                                 </div>
-                                <div className="text">
-                                    <h2>Абрикос</h2>
-                                    <p>10000 сум</p>
-                                </div>
-                            </div>
-                        </Link>
-                        <Link to='/see-catalog/1' className="col-lg-4 mb-4">
-                            <div className="cards">
-                                <div className="img">
-                                    <img src="/assets/image/category/2.jpg" alt="" className="w-100" />
-                                </div>
-                                <div className="text">
-                                    <h2>Абрикос</h2>
-                                    <p>10000 сум</p>
-                                </div>
-                            </div>
-                        </Link>
-                        <Link to='/see-catalog/1' className="col-lg-4 mb-4">
-                            <div className="cards">
-                                <div className="img">
-                                    <img src="/assets/image/category/3.jpg" alt="" className="w-100" />
-                                </div>
-                                <div className="text">
-                                    <h2>Абрикос</h2>
-                                    <p>10000 сум</p>
-                                </div>
-                            </div>
-                        </Link>
-                        <Link to='/see-catalog/1' className="col-lg-4 mb-4">
-                            <div className="cards">
-                                <div className="img">
-                                    <img src="/assets/image/category/4.jpg" alt="" className="w-100" />
-                                </div>
-                                <div className="text">
-                                    <h2>Абрикос</h2>
-                                    <p>10000 сум</p>
-                                </div>
-                            </div>
-                        </Link>
-                        <Link to='/see-catalog/1' className="col-lg-4 mb-4">
-                            <div className="cards">
-                                <div className="img">
-                                    <img src="/assets/image/category/5.jpg" alt="" className="w-100" />
-                                </div>
-                                <div className="text">
-                                    <h2>Абрикос</h2>
-                                    <p>10000 сум</p>
-                                </div>
-                            </div>
-                        </Link>
-                        <Link to='/see-catalog/1' className="col-lg-4 mb-4">
-                            <div className="cards">
-                                <div className="img">
-                                    <img src="/assets/image/category/6.jpg" alt="" className="w-100" />
-                                </div>
-                                <div className="text">
-                                    <h2>Абрикос</h2>
-                                    <p>10000 сум</p>
-                                </div>
-                            </div>
-                        </Link>
+                            </Link>
+
+                        ))}
+
                     </div>
                 </div>
             </div>

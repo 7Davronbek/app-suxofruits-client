@@ -12,7 +12,6 @@ const CatalogId = (props) => {
   const getCategory = async () => {
     await axios.get(API_PATH + `category/${props.match.params.id}`)
       .then((res) => {
-        console.log(res);
         setCategory(res.data.products)
         setCategoryTitle(res.data)
       })

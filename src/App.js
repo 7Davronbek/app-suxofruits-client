@@ -27,7 +27,7 @@ const App = () => {
           <Route path="/photogalary" exact component={Photogalary} />
           <Route path="/contacts" exact component={Contacts} />
           <Route path="/catalog/:id" exact component={CatalogId} />
-          <Route path="/see-catalog/1" exact component={SeeCatalog} />
+          <Route path="/see-catalog/:id" exact component={SeeCatalog} />
         </Switch>
 
         <Footer />

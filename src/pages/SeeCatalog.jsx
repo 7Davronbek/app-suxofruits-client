@@ -2,33 +2,30 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { API_PATH } from '../tools/constants';
 
-const SeeCatalog = () => {
+const SeeCatalog = (props) => {
     const [isLoading, setIsLoading] = useState(true);
+    const [product, setProduct] = useState({})
 
-    const getAll = () => {
-        fetch(API_PATH + 'api/category')
-            .then(async response => {
-                const data = await response.json();
-                console.log(data);
+    // const getProduct = async () => {
+    //     await axios.get(API_PATH + `product/${props.match.params.id}`)
+    //         .then((res) => {
+    //             console.log(res);
+    //         })
+    //         .catch((err) => {
+    //             console.log(err);
+    //         })
+    // }
+
+    const getProduct = async () => {
+        await axios.get(API_PATH + `product/${props.match.params.id}`)
+            .then((res) => {
+                setProduct(res.data)
             })
-            .catch(error => {
-                console.log(error);
-            });
-
     }
 
     useEffect(() => {
 
-        axios.get(API_PATH + 'api/category')
-            .then((res) => {
-                console.log(res);
-            })
-            .catch((err) => {
-                console.log(err);
-            })
-
-        getAll()
-
+        getProduct()
 
         setTimeout(() => {
             setIsLoading(false);
@@ -68,12 +65,13 @@ const SeeCatalog = () => {
                             <div className="container">
                                 <div className="row align-items-center  ">
                                     <div className="col-5 leftWrap">
-                                        <img src="/assets/image/category/1.jpg" className='w-100' alt="" />
+                                        <img src={`${product.image}`} className='w-100' alt="" />
                                     </div>
                                     <div className="col-6 rightWrap">
-                                        <h2 className="bold"> Абрикосы</h2>
-                                        <h5>Яркий аппетитный фрукт желтого цвета, временами – с красными бочками. Имеет характерное углубление во всю длину плода. Вкус – сладкий, насыщенный, мякоть сочная, с чуть заметной кислинкой. Произрастают в субтропиках. Самые вкусные абрикосы выращены в Самарканде и Ферганской долине. Плоды содержат большое количество калия, витаминов, микроэлементов, пектина. Используют для приготовления соков, джема, варенья, компотов. Особенно ценятся в виде сухофруктов.</h5>
-                                        <h5>Абрикос употребляют в свежем виде. измельченные плоды добавляют в кисло-сладкие соусы. В десертах хорошо сочетается с ядрами косточек - миндалем.</h5>
+                                        <h2 className="bold"> {product.title}</h2>
+                                        <h5>{product.description}</h5>
+                                        {/* <h5>Яркий аппетитный фрукт желтого цвета, временами – с красными бочками. Имеет характерное углубление во всю длину плода. Вкус – сладкий, насыщенный, мякоть сочная, с чуть заметной кислинкой. Произрастают в субтропиках. Самые вкусные абрикосы выращены в Самарканде и Ферганской долине. Плоды содержат большое количество калия, витаминов, микроэлементов, пектина. Используют для приготовления соков, джема, варенья, компотов. Особенно ценятся в виде сухофруктов.</h5> */}
+                                        {/* <h5>Абрикос употребляют в свежем виде. измельченные плоды добавляют в кисло-сладкие соусы. В десертах хорошо сочетается с ядрами косточек - миндалем.</h5> */}
 
                                         <div className="btnWrap">
                                             <a target="_blank" rel="noreferrer" href='tel: +998998190007' className='btnGradient2'>Узнать цену</a>

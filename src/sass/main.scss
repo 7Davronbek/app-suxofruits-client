@@ -392,13 +392,14 @@ html {
         }
 
         .navBar {
-            display: none;
+            // display: none;
             padding: 60px 0 40px;
             position: fixed;
             width: 100%;
             top: 0;
             left: 0;
             transition: all .7s ease-in;
+            overflow: hidden;
 
             h6 {
                 color: #000;
@@ -449,6 +450,11 @@ html {
                             z-index: -1;
                             transition: all .4s ease-in-out;
                             cursor: pointer;
+
+                            @media(max-width: 1400px) {
+                                height: 135px;
+
+                            }
                         }
 
                         &:hover {
@@ -462,6 +468,10 @@ html {
                                 background-color: $main;
                                 cursor: pointer;
                             }
+                        }
+
+                        @media(max-width: 1400px) {
+                            font-size: 20px;
                         }
                     }
                 }

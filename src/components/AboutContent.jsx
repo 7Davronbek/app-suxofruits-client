@@ -41,7 +41,7 @@ const AboutContent = () => {
                         </div>
                     </div>
 
-                    <div className="row align-items-center justify-content-center flex-column-reverse">
+                    <div className="row align-items-center justify-content-center flex-column-reverse flex-lg-row">
                         <div className="col-md-10 col-lg-5">
 
                             <h2><b>Эгамбердиев Рахимжон Солиевич</b></h2>

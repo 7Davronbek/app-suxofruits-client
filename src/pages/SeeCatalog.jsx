@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { API_PATH } from '../tools/constants';
 
-// import { Fancybox, Carousel, Panzoom } from "@fancyapps/ui";
+import { Fancybox, Carousel, Panzoom } from "@fancyapps/ui";
 
 import "@fancyapps/ui/dist/fancybox.css";
 
@@ -75,7 +75,7 @@ const SeeCatalog = (props) => {
                         <div className="container">
                             <div className="row align-items-center  ">
 
-                                <div className="col-5 leftWrap">
+                                <div className="col-lg-5 leftWrap">
                                     <a
                                         href={`${product.image}`}
                                         data-fancybox="gallery"
@@ -85,7 +85,7 @@ const SeeCatalog = (props) => {
 
 
                                 </div>
-                                <div className="col-6 rightWrap">
+                                <div className="col-lg-6 rightWrap">
                                     <h2 className="bold"> {product.title}</h2>
                                     <h5>{product.description}</h5>
                                     {/* <h5>Яркий аппетитный фрукт желтого цвета, временами – с красными бочками. Имеет характерное углубление во всю длину плода. Вкус – сладкий, насыщенный, мякоть сочная, с чуть заметной кислинкой. Произрастают в субтропиках. Самые вкусные абрикосы выращены в Самарканде и Ферганской долине. Плоды содержат большое количество калия, витаминов, микроэлементов, пектина. Используют для приготовления соков, джема, варенья, компотов. Особенно ценятся в виде сухофруктов.</h5> */}

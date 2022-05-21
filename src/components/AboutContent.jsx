@@ -35,10 +35,13 @@ const AboutContent = () => {
                         </div>
                     </div>
 
-                    <div className="row align-items-center justify-content-center">
+                    <div className="row">
                         <div className="col-12">
                             <h1 className="light">Директор</h1>
                         </div>
+                    </div>
+
+                    <div className="row align-items-center justify-content-center flex-column-reverse">
                         <div className="col-md-10 col-lg-5">
 
                             <h2><b>Эгамбердиев Рахимжон Солиевич</b></h2>

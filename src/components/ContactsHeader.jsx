@@ -52,7 +52,7 @@ const ContactsHeader = () => {
                                     <span>Тошкент шахри Сергели  тумани,  Қорасув МФЙ, Янги турмуш кўчаси 4-уй</span>
                                 </a>
 
-                                <div className="d-flex align-items-center mt-4 ms-3">
+                                <div className="d-flex align-items-center mt-4 ms-3 socialsWrap">
 
                                     <a target="_blank" rel="noreferrer" href='https://www.facebook.com/profile.php?id=100009057463429'><i className="icon cursor icon-fb"></i></a>
                                     <a target="_blank" rel="noreferrer" href='https://www.instagram.com/ekofrukt.uz/' ><i className="icon cursor mx-5 icon-insta"></i></a>

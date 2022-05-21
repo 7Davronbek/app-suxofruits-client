@@ -166,7 +166,7 @@ html {
                 left: -107px;
                 bottom: -250px;
 
-               
+
             }
         }
 
@@ -392,7 +392,7 @@ html {
         }
 
         .navBar {
-            // display: none;
+            display: none;
             padding: 60px 0 40px;
             position: fixed;
             width: 100%;
@@ -538,8 +538,10 @@ html {
                 }
 
                 @media(max-width: 767px) {
-                    padding: 50px 30px;
                     margin-bottom: 60px;
+                    width: 95%;
+                    padding: 50px 15px;
+
                 }
             }
 
@@ -723,6 +725,10 @@ html {
                     font-size: 17px;
                 }
             }
+
+            @media(max-width: 992px) {
+                margin: 20px 0;
+            }
         }
 
         .galary {
@@ -761,6 +767,10 @@ html {
 
                 img {
                     width: 100%;
+                }
+
+                @media(max-width: 767px) {
+                    left: -80px;
                 }
             }
 
@@ -981,8 +991,8 @@ html {
                 justify-content: center;
 
                 @media (max-width:576px) {
-                    
-                    &.bot-1{
+
+                    &.bot-1 {
                         margin-top: 0;
                     }
                 }
@@ -1224,7 +1234,7 @@ html {
         .productionHeader {
             background-image: url(../images/headerBg.jpg);
             background-size: cover;
-            
+
 
             .blurs {
                 backdrop-filter: blur(15px);
@@ -1261,6 +1271,10 @@ html {
                     left: 50%;
                     transform: translateX(-22%);
                 }
+
+                @media(max-width: 992px) {
+                    font-size: 35px;
+                }
             }
 
             .h2 {
@@ -1280,6 +1294,10 @@ html {
                     bottom: -7px;
                     left: 50%;
                     transform: translateX(-90%);
+                }
+
+                @media(max-width: 992px) {
+                    font-size: 35px;
                 }
             }
 
@@ -1340,6 +1358,10 @@ html {
                     }
                 }
             }
+
+            @media(max-width: 767px) {
+                padding: 30px 0 40px;
+            }
         }
 
         .contactsHeader {
@@ -1352,9 +1374,8 @@ html {
 
             .secondary {
                 height: 510px;
-                @media (max-width:767px) {
-                    
-                }
+
+                @media (max-width:767px) {}
             }
 
             h1 {
@@ -1644,7 +1665,7 @@ html {
 
                 .swiper-slide {
                     margin: auto;
-                }   
+                }
 
                 .swiper-wrapper {
                     padding: 50px 0;
@@ -1723,6 +1744,7 @@ html {
             h2 {
                 margin: 20px 0;
                 font-size: 38px;
+
                 @media (max-width:767px) {
                     font-size: 25px;
                 }
@@ -1865,9 +1887,9 @@ html {
 
                 @media (max-width:767px) {
                     flex-direction: column;
-                    
+
                     margin-top: 50px;
-                    
+
                 }
 
                 &:hover {

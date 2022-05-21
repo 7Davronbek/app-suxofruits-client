@@ -1,6 +1,22 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import axios from 'axios'
+import { API_PATH } from '../tools/constants'
 
 const Portfolio = () => {
+    const [portfolio, setPortfolio] = useState([])
+
+    const getPortfolio = async () => {
+        await axios.get(API_PATH + 'images')
+            .then((res) => {
+                setPortfolio(res.data)
+            })
+            .catch((err) => { console.log(err); })
+    }
+
+    useEffect(() => {
+        getPortfolio()
+    }, [])
+
     return (
         <>   <div className="portfolio ">
             <div className="container">
@@ -10,87 +26,11 @@ const Portfolio = () => {
                     </div>
                 </div>
                 <div className="image-gallary">
-                    <div className="image-box">
-                        <img src="/assets/image/portfolio/1.jpg" alt="" />
-                    </div>
-                    <div className="image-box">
-                        <img src="/assets/image/portfolio/2.jpg" alt="" />
-                    </div>
-                    <div className="image-box">
-                        <img src="/assets/image/portfolio/3.jpg" alt="" />
-                    </div>
-                    <div className="image-box">
-                        <img src="/assets/image/portfolio/4.jpg" alt="" />
-                    </div>
-                    <div className="image-box">
-                        <img src="/assets/image/portfolio/5.jpg" alt="" />
-                    </div>
-                    <div className="image-box">
-                        <img src="/assets/image/portfolio/6.jpg" alt="" />
-                    </div>
-                    <div className="image-box">
-                        <img src="/assets/image/portfolio/7.jpg" alt="" />
-                    </div>
-                    <div className="image-box">
-                        <img src="/assets/image/portfolio/8.jpg" alt="" />
-                    </div>
-                    <div className="image-box">
-                        <img src="/assets/image/portfolio/9.jpg" alt="" />
-                    </div>
-                    <div className="image-box">
-                        <img src="/assets/image/portfolio/10.jpg" alt="" />
-                    </div>
-                    <div className="image-box">
-                        <img src="/assets/image/portfolio/11.jpg" alt="" />
-                    </div>
-                    <div className="image-box">
-                        <img src="/assets/image/portfolio/12.jpg" alt="" />
-                    </div>
-                    <div className="image-box">
-                        <img src="/assets/image/portfolio/13.jpg" alt="" />
-                    </div>
-                    <div className="image-box">
-                        <img src="/assets/image/portfolio/14.jpg" alt="" />
-                    </div>
-                    <div className="image-box">
-                        <img src="/assets/image/portfolio/20.jpg" alt="" />
-                    </div>
-                    <div className="image-box">
-                        <img src="/assets/image/portfolio/16.jpeg" alt="" />
-                    </div>
-                    <div className="image-box">
-                        <img src="/assets/image/portfolio/17.jpg" alt="" />
-                    </div>
-                    <div className="image-box">
-                        <img src="/assets/image/portfolio/18.jpg" alt="" />
-                    </div>
-                    <div className="image-box">
-                        <img src="/assets/image/portfolio/19.webp" alt="" />
-                    </div>
-                    <div className="image-box">
-                        <img src="/assets/image/portfolio/15.jpg" alt="" />
-                    </div>
-                    <div className="image-box">
-                        <img src="/assets/image/portfolio/21.jpg" alt="" />
-                    </div>
-                    <div className="image-box">
-                        <img src="/assets/image/portfolio/22.jpg" alt="" />
-                    </div>
-                    <div className="image-box">
-                        <img src="/assets/image/portfolio/5.jpg" alt="" />
-                    </div>
-                    <div className="image-box">
-                        <img src="/assets/image/portfolio/23.jpg" alt="" />
-                    </div>
-                    <div className="image-box">
-                        <img src="/assets/image/portfolio/24.jpg" alt="" />
-                    </div>
-                    <div className="image-box">
-                        <img src="/assets/image/portfolio/25.jpg" alt="" />
-                    </div>
-                    <div className="image-box">
-                        <img src="/assets/image/portfolio/26.jpg" alt="" />
-                    </div>
+                    {portfolio?.map((item, index) => (
+                        <div key={index} className="image-box">
+                            <img src={`${item.image}`} alt="" />
+                        </div>
+                    ))}
                 </div>
 
                 <div className="row">
@@ -110,15 +50,6 @@ const Portfolio = () => {
                     </div>
                     <div className="image-box">
                         <img src="/assets/image/car/3.jpg" alt="" />
-                    </div>
-                    <div className="image-box">
-                        <img src="/assets/image/car/4.jpg" alt="" />
-                    </div>
-                    <div className="image-box">
-                        <img src="/assets/image/car/5.jpg" alt="" />
-                    </div>
-                    <div className="image-box">
-                        <img src="/assets/image/car/6.jpg" alt="" />
                     </div>
                 </div>
 

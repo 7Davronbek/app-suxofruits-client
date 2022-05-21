@@ -1603,7 +1603,7 @@ html {
                         }
                     }
                 }
-                
+
             }
 
             @media(max-width: 767px) {
@@ -1628,10 +1628,19 @@ html {
                     &::before {
                         border-radius: 0 !important;
                     }
+
+                    @media(max-width: 992px) {
+                        margin: 0;
+                        margin-bottom: 20px;
+                    }
                 }
 
                 a {
                     font-weight: 600;
+                }
+
+                @media(max-width: 992px) {
+                    flex-direction: column;
                 }
             }
 
@@ -1639,6 +1648,11 @@ html {
                 font-size: 45px;
                 color: #43b29a;
                 margin-bottom: 25px;
+
+                @media(max-width: 992px) {
+                    font-size: 35px;
+                    margin: 20px 0;
+                }
             }
 
             h5 {
@@ -1646,6 +1660,10 @@ html {
                 font-weight: 600;
                 margin-bottom: 20px;
                 line-height: 32px;
+
+                @media(max-width: 992px) {
+                    font-size: 18px
+                }
             }
 
             .rightWrap {

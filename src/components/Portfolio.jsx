@@ -94,7 +94,7 @@ const Portfolio = () => {
                 </div>
 
                 <div className="row">
-                    <div className="col-10 mx-auto">
+                    <div className="col-md-12 col-lg-10 mx-auto">
                         <h1 className="light">Страны экспортов:</h1>
                         <h3>Казахстан, Россия, Кыргызстан, Таджикистан, Украина, Польша, Беларусь, Израиль, Ирак, Китай, Турция, Арабские страны, страны Европы и другие.</h3>
                     </div>

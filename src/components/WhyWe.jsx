@@ -12,7 +12,7 @@ const WhyWe = () => {
                         </div>
                     </div>
                     <div className="row justify-content-center">
-                        <div className="col-4 zed h-100">
+                        <div className="col-md-4 zed h-100">
                             <div className="cards topCards">
                                 <div className="top">
                                     <lord-icon
@@ -26,7 +26,7 @@ const WhyWe = () => {
                                 <h5>ОПТИМАЛЬНОЕ СООТНОШЕНИЕ ЦЕНЫ И КАЧЕСТВА ТОВАРА</h5>
                             </div>
                         </div>
-                        <div className="col-4 zed h-100">
+                        <div className="col-md-4 zed h-100">
                             <div className="cards topCards">
                                 <div className="top">
                                     <lord-icon
@@ -42,8 +42,8 @@ const WhyWe = () => {
                         </div>
                     </div>
                     <div className="row mt-4 justify-content-center">
-                        <div className="col-3 zed h-100">
-                            <div className="cards">
+                        <div className="col-sm-6 col-md-4 col-lg-3 zed h-100">
+                            <div className="cards bot-1">
                                 <div className="top">
                                     <lord-icon
                                         src="https://cdn.lordicon.com/zhxxdohn.json"
@@ -56,7 +56,7 @@ const WhyWe = () => {
                                 <h5>ШИРОКИЙ АССОРТИМЕНТ</h5>
                             </div>
                         </div>
-                        <div className="col-3 zed h-100">
+                        <div className="col-sm-6 col-md-4 col-lg-3 zed h-100">
                             <div className="cards">
                                 <div className="top">
                                     <lord-icon
@@ -67,10 +67,10 @@ const WhyWe = () => {
                                         style={{ width: '200px', height: '200px' }}>
                                     </lord-icon>
                                 </div>
-                                <h5>	БЕСПЕРЕБОЙНЫЕ ПОСТАВКИ</h5>
+                                <h5>БЕСПЕРЕБОЙНЫЕ ПОСТАВКИ</h5>
                             </div>
                         </div>
-                        <div className="col-3 zed h-100">
+                        <div className="col-sm-6 col-md-4 col-lg-3 zed h-100">
                             <div className="cards">
                                 <div className="top">
 

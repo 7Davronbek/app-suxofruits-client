@@ -33,7 +33,7 @@ const ContactsHeader = () => {
                         <div className="col-12">
                             <h1 className="bold">Контакты</h1>
                         </div>
-                        <div className="col-5 mb-5">
+                        <div className="col-md-10 col-lg-5 mb-5">
                             <div className="wrap ">
                                 <a href='tel: +998998190007 ' className="d-flex align-items-center phone ">
                                     <i className='me-4'><img src="/assets/icon/phone.png" alt="" /></i>
@@ -63,7 +63,7 @@ const ContactsHeader = () => {
                             </div>
                         </div>
 
-                        <div className="col-5 mb-5">
+                        <div className="col-md-10 col-lg-5 mb-5">
                             <div className="wrap secondary">
                                 <h3>ОСТАВИТЬ ЗАЯВКУ</h3>
 

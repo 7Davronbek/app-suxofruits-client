@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="footer">
                 <div className="container">
                     <div className="row ">
-                        <div className="col-2 offset-1">
+                        <div className="col-md-2 offset-1">
                             <div className="logo"><h6 className=""><span className='bolds'>Eko</span>frukt</h6></div>
                             <div className="d-flex align-items-center justify-content-center mt-3">
                                 <a target="_blank" rel="noreferrer" href='https://t.me/uavsoffice/' className=""> <i className="icon icon-tg"></i></a>
@@ -16,7 +16,7 @@ const Footer = () => {
                             </div>
                         </div>
 
-                        <div className="col-2 offset-2">
+                        <div className="col-md-2 offset-2">
                             <ul className="footerMid">
                                 <h5>Сертификат</h5>
                                 <li className='mt-3'><a href="#!">ISO 45001 : 2018</a></li>
@@ -35,7 +35,7 @@ const Footer = () => {
                             </ul>
                         </div> */}
 
-                        <div className="col-4 ms-auto">
+                        <div className="col-md-4 ms-auto">
                             <ul className='footerRight'>
                                 <h5>Контактная информация</h5>
                                 <li><a href='#!'>Тошкент шахри Сергели  тумани,  Қорасув МФЙ, Янги турмуш кўчаси 4-уй</a></li>
@@ -46,7 +46,7 @@ const Footer = () => {
                         </div>
 
                         <div className="col-1"></div>
-
+                        
                     </div>
 
                     <div className="row">

@@ -3,5 +3,8 @@ export const uz = {
     production: 'Mahsulotlar',
     aboutCompany: 'О компании',
     photoGalary: 'Fotogalereya',
-    contact: 'Aloqa'
+    contact: 'Aloqa',
+    
+
+    catalog: 'Katalog'
 }

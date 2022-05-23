@@ -3,5 +3,8 @@ export const ru = {
     production: 'Продукция',
     aboutCompany: 'О компании',
     photoGalary: 'Фотогаларея',
-    contact: 'Контакты'
+    contact: 'Контакты',
+
+    
+    catalog: 'Каталог'
 }

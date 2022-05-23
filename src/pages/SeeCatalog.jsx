@@ -5,6 +5,8 @@ import { API_PATH } from '../tools/constants';
 import { Fancybox, Carousel, Panzoom } from "@fancyapps/ui";
 
 import "@fancyapps/ui/dist/fancybox.css";
+import Galary from '../components/Galary';
+// import Products from '../components/Products';
 
 const SeeCatalog = (props) => {
     const [isLoading, setIsLoading] = useState(true);
@@ -117,6 +119,9 @@ const SeeCatalog = (props) => {
                             </div>
                         </div>
                     </div>
+
+                    {/* <Products /> */}
+                    <Galary />
 
                 </>
             }

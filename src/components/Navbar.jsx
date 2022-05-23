@@ -2,6 +2,8 @@ import { faPhone } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import { getLanguage, getText } from '../locales'
+import { LANGUAGE } from '../tools/constants'
 
 const Navbar = () => {
     const [navbar, setNavbar] = useState(false);
@@ -17,6 +19,11 @@ const Navbar = () => {
     }
 
     window.addEventListener('scroll', changeNavbar);
+
+    const changeLanguage = (e) => {
+        localStorage.setItem(LANGUAGE, e.target.value)
+        document.location.reload(true)
+    }
     return (
         <>
             {/* Gallary <FontAwesomeIcon icon={faCoffee} FontAwesomeIcon/> */}
@@ -28,15 +35,19 @@ const Navbar = () => {
                         </div>
                         <div className="col-10 mobileWrap ">
                             <ul className={`${burger ? 'active' : ''}`}>
-                                <li><Link onClick={() => setBurger(false)} to='/' className={`${location.pathname === '/' ? 'active' : ''}`}>Главная</Link></li>
-                                <li><Link onClick={() => setBurger(false)} to='/production' className={`${location.pathname === '/production' ? 'active' : ''}`} >Продукция</Link></li>
-                                <li><Link onClick={() => setBurger(false)} to='/about-company' className={`${location.pathname === '/about-company' ? 'active' : ''}`} >О компании</Link></li>
+                                <li><Link onClick={() => setBurger(false)} to='/' className={`${location.pathname === '/' ? 'active' : ''}`}>{getText("home")}</Link></li>
+                                <li><Link onClick={() => setBurger(false)} to='/production' className={`${location.pathname === '/production' ? 'active' : ''}`} >{getText("production")}</Link></li>
+                                <li><Link onClick={() => setBurger(false)} to='/about-company' className={`${location.pathname === '/about-company' ? 'active' : ''}`} >{getText("aboutCompany")}</Link></li>
                                 {/* <li><Link to='/about-company' className={`${location.pathname === '/about-company' ? 'active' : ''}`} >Польза сухофруктов</Link></li> */}
-                                <li><Link onClick={() => setBurger(false)} to='/photogalary' className={`${location.pathname === '/photogalary' ? 'active' : ''}`} >Фотогаларея</Link></li>
-                                <li><Link onClick={() => setBurger(false)} to='/contacts' className={`${location.pathname === '/contacts' ? 'active' : ''}`} >Контакты</Link></li>
-                                <span>Uz</span>
-                                <span>Ru</span>
-                                <a href='tel: +998998190007 ' className="btn btnGradient2 ml-auto d-flex align-items-center"><span className="me-3"> <FontAwesomeIcon icon={faPhone} /> </span>Позвонить</a>
+                                <li><Link onClick={() => setBurger(false)} to='/photogalary' className={`${location.pathname === '/photogalary' ? 'active' : ''}`} >{getText("photoGalary")}</Link></li>
+                                <li><Link onClick={() => setBurger(false)} to='/contacts' className={`${location.pathname === '/contacts' ? 'active' : ''}`} >{getText("contact")}</Link></li>
+
+                                <select onChange={changeLanguage}>
+                                    <option value="ru" selected={getLanguage() === "ru"} >RU</option>
+                                    <option value="uz" selected={getLanguage() === "uz"} >UZ</option>
+                                </select>
+
+                                <a href='tel: +998998190007' className="btn btnGradient2 ml-auto d-flex align-items-center"><span className="me-3"> <FontAwesomeIcon icon={faPhone} /> </span>Позвонить</a>
                             </ul>
                         </div>
 

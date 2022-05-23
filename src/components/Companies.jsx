@@ -7,6 +7,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import { Autoplay, Navigation, Pagination } from "swiper";
+import { getText } from '../locales';
 
 const Companies = () => {
     return (
@@ -29,9 +30,9 @@ const Companies = () => {
                     modules={[Autoplay, Navigation, Pagination]}
                     className="mySwiper"
                 >
-                    <SwiperSlide><h2 className="bold">Главная Агрофирма ООО «URGUT AGRO-VET SERVIS»  (для Сухофрукт) 2015-г</h2></SwiperSlide>
-                    <SwiperSlide><h2 className="bold">ООО «ZARBDOR UNIVERSAL LOGISTIKA»  2017-г (Гидропонная тепличная-ферма выращивает помидоры, огурцы  и другие свежую плодоовощную продукцию) </h2></SwiperSlide>
-                    <SwiperSlide><h2 className="bold">ООО «ZARBDOR BARAKA AGROEKSPORT»  2020-г (для Сухофрукт)</h2></SwiperSlide>
+                    <SwiperSlide><h2 className="bold">{getText("companies1")}</h2></SwiperSlide>
+                    <SwiperSlide><h2 className="bold">{getText("companies2")}</h2></SwiperSlide>
+                    <SwiperSlide><h2 className="bold">{getText("companies3")}</h2></SwiperSlide>
                 </Swiper>
 
             </div>

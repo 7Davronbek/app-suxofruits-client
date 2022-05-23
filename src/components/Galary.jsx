@@ -10,7 +10,6 @@ const Galary = () => {
     const getAllCategory = async () => {
         await axios.get(API_PATH + 'category')
             .then((res) => {
-                console.log(res);
                 setAllCategory(res.data)
             })
     }

@@ -34,6 +34,8 @@ const Navbar = () => {
                                 {/* <li><Link to='/about-company' className={`${location.pathname === '/about-company' ? 'active' : ''}`} >Польза сухофруктов</Link></li> */}
                                 <li><Link onClick={() => setBurger(false)} to='/photogalary' className={`${location.pathname === '/photogalary' ? 'active' : ''}`} >Фотогаларея</Link></li>
                                 <li><Link onClick={() => setBurger(false)} to='/contacts' className={`${location.pathname === '/contacts' ? 'active' : ''}`} >Контакты</Link></li>
+                                <span>Uz</span>
+                                <span>Ru</span>
                                 <a href='tel: +998998190007 ' className="btn btnGradient2 ml-auto d-flex align-items-center"><span className="me-3"> <FontAwesomeIcon icon={faPhone} /> </span>Позвонить</a>
                             </ul>
                         </div>

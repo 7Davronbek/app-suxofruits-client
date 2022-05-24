@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useState } from 'react'
+import { getText } from '../locales'
 import { API_PATH } from '../tools/constants'
 
 const ContactsHeader = () => {
@@ -31,7 +32,7 @@ const ContactsHeader = () => {
                 <div className="container">
                     <div className="row align-items-center justify-content-center">
                         <div className="col-12">
-                            <h1 className="bold">Контакты</h1>
+                            <h1 className="bold">{getText("contact1")}</h1>
                         </div>
                         <div className="col-md-10 col-lg-5 mb-5">
                             <div className="wrap ">
@@ -49,7 +50,7 @@ const ContactsHeader = () => {
                                 </a>
                                 <a href='#!' className="d-flex align-items-center mt-3 ">
                                     <i className='me-4'><img src="/assets/icon/location.png" alt="" /></i>
-                                    <span>Тошкент шахри Сергели  тумани,  Қорасув МФЙ, Янги турмуш кўчаси 4-уй</span>
+                                    <span>{getText("footer3")}</span>
                                 </a>
 
                                 <div className="d-flex align-items-center mt-4 ms-3 socialsWrap">
@@ -65,24 +66,24 @@ const ContactsHeader = () => {
 
                         <div className="col-md-10 col-lg-5 mb-5">
                             <div className="wrap secondary">
-                                <h3>ОСТАВИТЬ ЗАЯВКУ</h3>
+                                <h3>{getText("contact2")}</h3>
 
                                 <form onSubmit={e => e.preventDefault()}>
                                     <input
                                         name='name'
                                         value={name}
                                         onChange={e => setName(e.target.value)}
-                                        required type="text" className='form-control' placeholder='Ваше имя*' />
+                                        required type="text" className='form-control' placeholder={getText('contact3')} />
                                     <input
                                         name='number'
                                         value={number}
                                         onChange={e => setNumber(e.target.value)}
-                                        required type="text" className='form-control' placeholder='Ваш номер*' />
+                                        required type="text" className='form-control' placeholder={getText('contact4')} />
                                     <textarea
                                         name='name'
                                         value={text}
                                         onChange={e => setText(e.target.value)}
-                                        required type="text" className='form-control' placeholder='Тема консультации*' />
+                                        required type="text" className='form-control' placeholder={getText('contact5')} />
 
                                     <button onClick={handleClick}>Отправить</button>
                                 </form>

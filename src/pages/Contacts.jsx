@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import ContactsHeader from '../components/ContactsHeader'
+import { getText } from '../locales';
 
 const Contacts = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -14,7 +15,7 @@ const Contacts = () => {
       {isLoading ?
         <>
           <div className="loader">
-            <div className="img"><h6 className=""><span className='bolds'></span>Контакты</h6></div>
+            <div className="img"><h6 className=""><span className='bolds'></span>{getText("contact")}</h6></div>
 
             <div id="wifi-loader">
               <svg className="circle-outer" viewBox="0 0 86 86">

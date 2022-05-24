@@ -117,4 +117,11 @@ export const uz = {
   photoGalary3: "Eksport mamlakatlari:",
   photoGalary4:
     "Qozogʻiston, Rossiya, Qirgʻiziston, Tojikiston, Ukraina, Polsha, Belarus, Isroil, Iroq, Xitoy, Turkiya, arab davlatlari, Yevropa davlatlari va boshqalar.",
+
+  contact1: "Kontaktlar",
+  contact2: "MUROJAATINGIZNI QOLDIRING",
+  contact3: "Ismingiz*",
+  contact4: "Telefon raqamingiz*",
+  contact5: "Murojaatingizni mavzusi*",
+  contact6: "Yuborish",
 };

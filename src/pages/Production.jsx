@@ -3,6 +3,7 @@ import Benefits from '../components/Benefits';
 import Galary from '../components/Galary';
 // import Portfolio from '../components/Portfolio'
 import ProductionHeader from '../components/ProductionHeader'
+import { getText } from '../locales';
 
 const Production = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -17,7 +18,7 @@ const Production = () => {
       {isLoading ?
         <>
           <div className="loader">
-            <div className="img"><h6 className=""><span className='bolds'></span>Продукция</h6></div>
+            <div className="img"><h6 className=""><span className='bolds'></span>{getText("production4")}</h6></div>
 
             <div id="wifi-loader">
               <svg className="circle-outer" viewBox="0 0 86 86">

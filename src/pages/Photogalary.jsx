@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Portfolio from '../components/Portfolio'
+import { getText } from '../locales';
 
 const Photogalary = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -14,7 +15,7 @@ const Photogalary = () => {
             {isLoading ?
                 <>
                     <div className="loader">
-                        <div className="img"><h6 className=""><span className='bolds'></span>Фотогаларея</h6></div>
+                        <div className="img"><h6 className=""><span className='bolds'></span>{getText("photoGalary")}</h6></div>
 
                         <div id="wifi-loader">
                             <svg className="circle-outer" viewBox="0 0 86 86">

@@ -110,4 +110,11 @@ export const uz = {
     "R.Egamberdiyev 1990 yil 28 iyunda O‘zbekiston Respublikasi Samarqand viloyati Urgut tumanida tug‘ilgan. O‘rta maxsus ma’lumotli, “ZARBDOR UNIVERSAL LOGISTIKA” MChJ direktori. R.Egamberdiyev yosh bo‘lishiga qaramay, qishloq xo‘jaligining ko‘plab yetakchi mamlakatlari – Belgiya, Gollandiya, Belarus va boshqa mamlakatlarda bo‘lgan. Tabiatan u har qanday sohada mas'uliyatli, mehnatsevar, qat'iyatli, maqsadli. Jamoada munosib obro'ga ega, do'stona va ochiqko'ngil.",
   aboutContent15:
     "R.Egamberdiev kompaniyamizning tashqi savdo aloqalari bo'yicha savdo vakili.",
+
+  sertificates: "Sertifikatlar",
+
+  photoGalary2: "Ishlar galareyasi",
+  photoGalary3: "Eksport mamlakatlari:",
+  photoGalary4:
+    "Qozogʻiston, Rossiya, Qirgʻiziston, Tojikiston, Ukraina, Polsha, Belarus, Isroil, Iroq, Xitoy, Turkiya, arab davlatlari, Yevropa davlatlari va boshqalar.",
 };

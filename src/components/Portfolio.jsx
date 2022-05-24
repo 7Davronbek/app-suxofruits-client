@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { API_PATH } from '../tools/constants'
+import { getText } from '../locales'
 
 const Portfolio = () => {
     const [portfolio, setPortfolio] = useState([])
@@ -22,7 +23,7 @@ const Portfolio = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-12">
-                        <h2 className="h2 bold">Галерея работ</h2>
+                        <h2 className="h2 bold">{getText("photoGalary2")}</h2>
                     </div>
                 </div>
                 <div className="image-gallary">
@@ -35,8 +36,8 @@ const Portfolio = () => {
 
                 <div className="row">
                     <div className="col-md-12 col-lg-10 mx-auto">
-                        <h1 className="light">Страны экспортов:</h1>
-                        <h3>Казахстан, Россия, Кыргызстан, Таджикистан, Украина, Польша, Беларусь, Израиль, Ирак, Китай, Турция, Арабские страны, страны Европы и другие.</h3>
+                        <h1 className="light">{getText("photoGalary3")}</h1>
+                        <h3>{getText("photoGalary4")}</h3>
                     </div>
                 </div>
 

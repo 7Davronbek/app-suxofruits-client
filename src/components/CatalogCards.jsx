@@ -1,10 +1,9 @@
 // import React, { useState } from 'react'
 
-import axios from "axios"
-import { useEffect } from "react"
-import { useState } from "react"
+// import axios from "axios"
+// import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
-import { API_PATH, LANGUAGE } from "../tools/constants"
+import { LANGUAGE } from "../tools/constants"
 
 const CatalogCards = ({ category }) => {
 

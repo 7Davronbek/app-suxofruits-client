@@ -43,11 +43,11 @@ const Navbar = () => {
                                 <li><Link onClick={() => setBurger(false)} to='/contacts' className={`${location.pathname === '/contacts' ? 'active' : ''}`} >{getText("contact")}</Link></li>
 
                                 <select onChange={changeLanguage}>
-                                    <option value="ru" selected={getLanguage() === "ru"} >RU</option>
+                                    <option value="ru" selected={getLanguage() === "ru"} >Ру</option>
                                     <option value="uz" selected={getLanguage() === "uz"} >UZ</option>
                                 </select>
 
-                                <a href='tel: +998998190007' className="btn btnGradient2 ml-auto d-flex align-items-center"><span className="me-3"> <FontAwesomeIcon icon={faPhone} /> </span>Позвонить</a>
+                                <a href='tel: +998998190007' className="btn btnGradient2 ml-auto d-flex align-items-center"><span className="me-3"> <FontAwesomeIcon icon={faPhone} /> </span>{getText("phone")}</a>
                             </ul>
                         </div>
 

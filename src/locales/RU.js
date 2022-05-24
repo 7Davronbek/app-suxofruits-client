@@ -124,4 +124,6 @@ export const ru = {
   contact4: "Ваш номер*",
   contact5: "Тема консультации*",
   contact6: "Отправить",
+
+  phone: "Позвонить"
 };

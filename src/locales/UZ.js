@@ -124,4 +124,6 @@ export const uz = {
   contact4: "Telefon raqamingiz*",
   contact5: "Murojaatingizni mavzusi*",
   contact6: "Yuborish",
+
+  phone: "Aloqa"
 };

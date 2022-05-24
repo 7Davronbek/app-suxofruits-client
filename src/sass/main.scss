@@ -401,6 +401,19 @@ html {
             transition: all .7s ease-in;
             overflow: hidden;
 
+            select {
+                background: transparent;
+                border: transparent;
+                outline: none;
+                padding: 6px;
+                border-radius: 6px;
+                color: #fff;
+                padding: 6px 12px;
+                background: #42b19a;
+                font-size: 20px;
+                margin-left: auto;
+            }
+
             .burger1,
             .burger2,
             .burger3 {
@@ -659,7 +672,7 @@ html {
             justify-content: center;
             position: relative;
             overflow: hidden;
-            padding: 60px 0;
+            padding: 110px 0;
 
             .wrap {
                 width: 70%;

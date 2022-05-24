@@ -1,4 +1,5 @@
 import React from 'react'
+import { getText } from '../locales'
 
 const Footer = () => {
     return (
@@ -8,7 +9,7 @@ const Footer = () => {
                 <div className="container">
                     <div className="row ">
                         <div className="col-md-2 offset-1">
-                            <div className="logo"><h6 className=""><span className='bolds'>Eko</span>frukt</h6></div>
+                            <div className="logo"><h6 style={{ userSelect: "none" }} className=""><span className='bolds'>Eko</span>frukt</h6></div>
                             <div className="d-flex align-items-center justify-content-center mt-3">
                                 <a target="_blank" rel="noreferrer" href='https://t.me/uavsoffice/' className=""> <i className="icon icon-tg"></i></a>
                                 <a target="_blank" rel="noreferrer" href='https://www.instagram.com/ekofrukt.uz/' className=""><i className="icon cursor mx-3 icon-insta"></i></a>
@@ -18,7 +19,7 @@ const Footer = () => {
 
                         <div className="col-md-2 offset-2">
                             <ul className="footerMid">
-                                <h5>Сертификат</h5>
+                                <h5>{getText("footer1")}</h5>
                                 <li className='mt-3'><a href="#!">ISO 45001 : 2018</a></li>
                                 <li className='mt-3'><a href="#!">ISO 22000 : 2018</a></li>
                                 <li className='mt-3'><a href="#!">ISO 9001 : 2015</a></li>
@@ -37,8 +38,8 @@ const Footer = () => {
 
                         <div className="col-md-4 ms-auto">
                             <ul className='footerRight'>
-                                <h5>Контактная информация</h5>
-                                <li><a href='#!'>Тошкент шахри Сергели  тумани,  Қорасув МФЙ, Янги турмуш кўчаси 4-уй</a></li>
+                                <h5>{getText("footer2")}</h5>
+                                <li><a href='#!'>{getText("footer3")}</a></li>
                                 <li><a href="tel: +998998190007">+998 (99) 819-00-07</a></li>
                                 <li><a href="tel: +998998190007">+998 (97) 928-78-78</a></li>
                                 <li><a className='green' href="urgut.agrofirma@inbox.ru">urgut.agrofirma@inbox.ru</a></li>
@@ -46,7 +47,7 @@ const Footer = () => {
                         </div>
 
                         <div className="col-1"></div>
-                        
+
                     </div>
 
                     <div className="row">

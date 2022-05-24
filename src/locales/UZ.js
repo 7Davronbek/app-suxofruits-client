@@ -61,6 +61,10 @@ export const uz = {
   benefit17:
     "Yong'oq asab to'qimalari, yurak, jigar va boshqa organlarning faoliyatini yaxshilaydi; hujayralarning o'sishi va yangilanishiga yordam beradi, qondagi xolesterin darajasini pasaytiradi; diuretik sifatida ishlatiladi. Charchoq, uyqusizlik uchun foydali; xotira, e'tibor va eshitishni yaxshilaydi; potentsialni, libidoni oshiradi. Har kuni 30 gramm yeryong'oq iste'mol qilish yurak-qon tomir kasalliklari xavfini sezilarli darajada kamaytiradi.",
 
+    footer1: "Sertifikat",
+    footer2: "Bog'lanish uchun ma'lumot",
+    footer3: "Toshkent shahri Sergeli tumani, Korasuv MFI, Yangi turmush ko'chasi 4-uy",
+
   companies1:
     "Asosiy Agrofirma ООО «URGUT AGRO-VET SERVIS» (Suxofrukt uchun) 2015-y",
   companies2:

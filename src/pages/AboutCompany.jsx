@@ -3,6 +3,7 @@ import AboutContent from '../components/AboutContent'
 import AboutHeader from '../components/AboutHeader'
 import Sertificates from '../components/Sertificates'
 import WhyWe from '../components/WhyWe'
+import { getText } from '../locales'
 
 const AboutCompany = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -18,7 +19,7 @@ const AboutCompany = () => {
       {isLoading ?
         <>
           <div className="loader">
-            <div className="img"><h6 className=""><span className='bolds'></span>О компании</h6></div>
+            <div className="img"><h6 className=""><span className='bolds'></span>{getText("aboutCompany3")}</h6></div>
 
             <div id="wifi-loader">
               <svg className="circle-outer" viewBox="0 0 86 86">

@@ -1,4 +1,5 @@
 import React from 'react'
+import { getText } from '../locales'
 
 const AboutHeader = () => {
     return (
@@ -9,8 +10,8 @@ const AboutHeader = () => {
                     <div className="row">
                         <div className="col-12">
                             <div className="wrap headerWrap">
-                                <h1 className="bold">Принцип нашего производства </h1>
-                                <p>Принцип нашего производства — это всегда и своевременно производить, и поставлять качественные, полезные свежие фрукты и сухофрукты.</p>
+                                <h1 className="bold">{getText("aboutCompany1")} </h1>
+                                <p>{getText("aboutCompany2")}</p>
                             </div>
                         </div>
                     </div>

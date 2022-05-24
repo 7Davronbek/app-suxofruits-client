@@ -79,4 +79,35 @@ export const uz = {
   companies3: "ООО «ZARBDOR BARAKA AGROEKSPORT»  2020-y (Suxofrukt uchun)",
 
   catalog: "Katalog",
+
+  aboutCompany1: "Bizning ishlab chiqarish printsipimiz",
+  aboutCompany2:
+    "Bizning ishlab chiqarish tamoyili har doim va o'z vaqtida sifatli, sog'lom yangi va quritilgan mevalarni ishlab chiqarish va etkazib berishdir.",
+  aboutCompany3: "Kompaniya haqida",
+
+  aboutContent1: "Maqsad",
+  aboutContent2:
+    "Korxonalarimiz tashkil etilishidan maqsad qishloq xo‘jaligi mahsulotlari – meva-sabzavot yetishtirish, ushbu mahsulotlarni qayta ishlash, mahalliy bozorlarni foydali, sifatli qishloq xo‘jaligi mahsulotlari bilan to‘ldirish va xalqaro bozorlarga chiqish edi. Va biz maqsadimizga erisha oldik.",
+  aboutContent3:
+    "Faoliyati davomida kompaniyamiz mahsulotlarimizni Xitoy, Polsha, Ukraina, Qozog'iston, Birlashgan Arab Amirliklari, Belarus, Isroil, Iroq va boshqa mamlakatlarga eksport qilish imkoniyatiga ega bo'ldi.",
+  aboutContent4:
+    "Bugungi kunda qishloq xo‘jaligi korxonalarimizda 500 nafardan ortiq hududlarimiz aholisi ish bilan ta’minlangan. Yurtdoshlarimiz yetishtirgan mahsulotlarni yetishtirish va ishlab chiqarishdan tashqari bozorlarga ham qulay narxlarda va sifatli sotmoqda.",
+  aboutContent5:
+    "Kompaniyamiz 2020 yilda quritilgan mevalar va ikkilamchi ishlab chiqarilgan mevalarni sotish bo'yicha 12 ming tonnadan ortiq eksportga erishdi.",
+  aboutContent6:
+    "O‘tgan 2021-yilda esa quritilgan mevalar va ikkilamchi mahsulotlarni sotish 13,5 ming tonnadan ortiq eksportga yetdi.",
+  aboutContent7:
+    "Asosiy eksport mahsuloti turli navli quritilgan uzum, turli navli quritilgan oʻrik, quritilgan oʻrik, quritilgan mevalar aralashmasi, quritilgan olma, quritilgan qovun, loviya, mos (yasmiq) kabi dukkakli ekinlar va boshqalar.",
+  aboutContent8: "Bosh direktor",
+  aboutContent9: "Maxqulov Soli Egamberdievich",
+  aboutContent10:
+    "S.Maxqulov 1966-yil 5-mayda O‘zbekiston Respublikasi Samarqand viloyati Urgut tumanida tug‘ilgan. Maʼlumoti oliy, 1988-yilda Toshkent xalq xoʻjaligi institutining iqtisod-moliya fakultetini tamomlagan.",
+  aboutContent11:
+    "Maxqulov Soli Egamberdievich – korxonaning asosiy asoschilaridan biri sifatida hozirgi bozor iqtisodiyoti, raqobat kuchini, talab va taklifni chuqur tushunadi. Uning ko‘p yillik tajribasi va bilimi bilan jamiyatning har qanday vaqtda to‘g‘ri va ijobiy faoliyat yuritishini ta’minlash mumkin. S.Maxqulov ko‘p yillardan buyon tadbirkorlik bilan shug‘ullanadi, savdo aloqalarini yaxshi tushunadi, ko‘plab xorijiy davlatlar bilan ko‘plab tashqi savdo aloqalari mavjud.",
+  aboutContent12: "Direktor",
+  aboutContent13: "Egamberdiev Raximjon Soliyevich",
+  aboutContent14:
+    "R.Egamberdiyev 1990 yil 28 iyunda O‘zbekiston Respublikasi Samarqand viloyati Urgut tumanida tug‘ilgan. O‘rta maxsus ma’lumotli, “ZARBDOR UNIVERSAL LOGISTIKA” MChJ direktori. R.Egamberdiyev yosh bo‘lishiga qaramay, qishloq xo‘jaligining ko‘plab yetakchi mamlakatlari – Belgiya, Gollandiya, Belarus va boshqa mamlakatlarda bo‘lgan. Tabiatan u har qanday sohada mas'uliyatli, mehnatsevar, qat'iyatli, maqsadli. Jamoada munosib obro'ga ega, do'stona va ochiqko'ngil.",
+  aboutContent15:
+    "R.Egamberdiev kompaniyamizning tashqi savdo aloqalari bo'yicha savdo vakili.",
 };

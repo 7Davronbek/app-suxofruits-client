@@ -125,5 +125,8 @@ export const uz = {
   contact5: "Murojaatingizni mavzusi*",
   contact6: "Yuborish",
 
-  phone: "Aloqa"
+  phone: "Aloqa",
+
+  seeCatalog1: "Qo'ngiroq qilish",
+  seeCatalog2: "Telegramdan yozish",
 };

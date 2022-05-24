@@ -125,5 +125,8 @@ export const ru = {
   contact5: "Тема консультации*",
   contact6: "Отправить",
 
-  phone: "Позвонить"
+  phone: "Позвонить",
+
+  seeCatalog1: "Узнать цену",
+  seeCatalog2: " Написать в телеграм",
 };

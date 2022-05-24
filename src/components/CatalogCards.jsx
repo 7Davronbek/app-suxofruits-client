@@ -4,7 +4,7 @@ import axios from "axios"
 import { useEffect } from "react"
 import { useState } from "react"
 import { Link } from "react-router-dom"
-import { API_PATH } from "../tools/constants"
+import { API_PATH, LANGUAGE } from "../tools/constants"
 
 const CatalogCards = ({ category }) => {
 
@@ -61,7 +61,8 @@ const CatalogCards = ({ category }) => {
                                         <img src={`${item.image}`} alt="" className="w-100" />
                                     </div>
                                     <div className="text">
-                                        <h2>{item.title}</h2>
+                                        {localStorage.getItem(LANGUAGE) === "uz" ? <h2 className="">{item.title_uz}</h2> : <h2 className="">{item.title}</h2>}
+                                        {/* <h2>{item.title}</h2> */}
                                     </div>
                                 </div>
                             </Link>

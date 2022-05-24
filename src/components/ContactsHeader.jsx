@@ -85,7 +85,7 @@ const ContactsHeader = () => {
                                         onChange={e => setText(e.target.value)}
                                         required type="text" className='form-control' placeholder={getText('contact5')} />
 
-                                    <button onClick={handleClick}>Отправить</button>
+                                    <button onClick={handleClick}>{getText("contact6")}</button>
                                 </form>
                             </div>
                         </div>

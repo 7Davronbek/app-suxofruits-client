@@ -1,11 +1,12 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-import { API_PATH } from '../tools/constants';
+import { API_PATH, LANGUAGE } from '../tools/constants';
 
 import { Fancybox, Carousel, Panzoom } from "@fancyapps/ui";
 
 import "@fancyapps/ui/dist/fancybox.css";
 import Galary from '../components/Galary';
+import { getText } from '../locales';
 // import Products from '../components/Products';
 
 const SeeCatalog = (props) => {
@@ -88,16 +89,18 @@ const SeeCatalog = (props) => {
 
                                 </div>
                                 <div className="col-lg-6 rightWrap">
-                                    <h2 className="bold"> {product.title}</h2>
-                                    <h5>{product.description}</h5>
+                                    {localStorage.getItem(LANGUAGE) === "uz" ? <h2 className="">{product.title_uz}</h2> : <h2 className="">{product.title}</h2>}
+                                    {/* <h2 className="bold"> {product.title}</h2> */}
+                                    {localStorage.getItem(LANGUAGE) === "uz" ? <h5 className="">{product.description_uz}</h5> : <h5 className="">{product.description}</h5>}
+                                    {/* <h5>{product.description}</h5> */}
                                     {/* <h5>Яркий аппетитный фрукт желтого цвета, временами – с красными бочками. Имеет характерное углубление во всю длину плода. Вкус – сладкий, насыщенный, мякоть сочная, с чуть заметной кислинкой. Произрастают в субтропиках. Самые вкусные абрикосы выращены в Самарканде и Ферганской долине. Плоды содержат большое количество калия, витаминов, микроэлементов, пектина. Используют для приготовления соков, джема, варенья, компотов. Особенно ценятся в виде сухофруктов.</h5> */}
                                     {/* <h5>Абрикос употребляют в свежем виде. измельченные плоды добавляют в кисло-сладкие соусы. В десертах хорошо сочетается с ядрами косточек - миндалем.</h5> */}
 
                                     <div className="btnWrap">
-                                        <a target="_blank" rel="noreferrer" href='tel: +998998190007' className='btnGradient2'>Узнать цену</a>
+                                        <a target="_blank" rel="noreferrer" href='tel: +998998190007' className='btnGradient2'>{getText("seeCatalog1")}</a>
 
                                         <a target="_blank" rel="noreferrer" href='https://t.me/uavsoffice/'>
-                                            <button className="c-button c-button--gooey"> Написать в телеграм
+                                            <button className="c-button c-button--gooey"> {getText("seeCatalog2")}
                                                 <div className="c-button__blobs">
                                                     <div></div>
                                                     <div></div>

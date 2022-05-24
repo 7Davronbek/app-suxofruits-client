@@ -1,4 +1,5 @@
 import React from 'react'
+import { getText } from '../locales'
 // import { Background, Parallax } from 'react-parallax';
 const Header = () => {
     return (
@@ -48,12 +49,12 @@ const Header = () => {
                         <div className="col-12 zed">
                             <div className="wrap">
                                 <h1 className='bold'>
-                                    Оптовая продажа орехов и сухофруктов и овощей 
+                                    {getText("header1")}
                                     {/* Сухофрукт - тоже фрукт */}
                                 </h1>
-                                <h4>Достака по заказу для других стран</h4>
+                                <h4>{getText("header2")}</h4>
                                 <h5>
-                                    Агрофирма поставить свежую плодоовощную продукцию, бахчи и виноград, сушенных овощей и фруктов и бобовых культур выращенных в Республике Узбекистан (2021-2022)
+                                    {getText("header3")}
                                 </h5>
                             </div>
                         </div>

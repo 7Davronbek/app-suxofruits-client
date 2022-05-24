@@ -650,7 +650,6 @@ html {
         .header {
             z-index: 99999;
             background-image: url(../images/headerBg2.jpg);
-            height: 80vh;
             background-repeat: no-repeat;
             background-size: cover;
             background-attachment: fixed;
@@ -660,6 +659,7 @@ html {
             justify-content: center;
             position: relative;
             overflow: hidden;
+            padding: 60px 0;
 
             .wrap {
                 width: 70%;

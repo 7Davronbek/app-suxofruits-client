@@ -11,11 +11,23 @@ export const uz = {
     "Agrofirma O‘zbekiston Respublikasida yetishtiriladigan ho‘l meva-sabzavot, poliz va uzum, quritilgan sabzavot hamda meva va dukkakli ekinlarni yetkazib berish (2021-2022)",
 
   about1: "Biz haqimizda",
-  about2: "Asosiy eksport mahsuloti turli navli quritilgan uzum, turli navli quritilgan oʻrik, quritilgan oʻrik, quritilgan mevalar aralashmasi, quritilgan olma, quritilgan qovun, loviya, mos (yasmiq) kabi dukkakli ekinlar va boshqalar.",
-  about3: "Bugungi kunda qishloq xo‘jaligi korxonalarimizda 500 nafardan ortiq hududlarimiz aholisi ish bilan ta’minlangan. Yurtdoshlarimiz yetishtirgan mahsulotlarni yetishtirish va ishlab chiqarishdan tashqari bozorlarga ham qulay narxlarda va sifatli sotmoqda.",
-  about4: "Kompaniyamiz 2020 yilda quritilgan mevalar va ikkilamchi ishlab chiqarilgan mevalarni sotish bo'yicha 12 ming tonnadan ortiq eksportga erishdi.",
-  about5: "O‘tgan 2021-yilda esa quritilgan mevalar va ikkilamchi mahsulotlarni sotish 13,5 ming tonnadan ortiq eksportga yetdi.",
-  about6: "Eksport mamlakatlari: Qozogʻiston, Rossiya, Qirgʻiziston, Tojikiston, Ukraina, Polsha, Belarus, Isroil, Iroq, Xitoy, Turkiya, arab mamlakatlari, Yevropa davlatlari va boshqalar.",
+  about2:
+    "Asosiy eksport mahsuloti turli navli quritilgan uzum, turli navli quritilgan oʻrik, quritilgan oʻrik, quritilgan mevalar aralashmasi, quritilgan olma, quritilgan qovun, loviya, mos (yasmiq) kabi dukkakli ekinlar va boshqalar.",
+  about3:
+    "Bugungi kunda qishloq xo‘jaligi korxonalarimizda 500 nafardan ortiq hududlarimiz aholisi ish bilan ta’minlangan. Yurtdoshlarimiz yetishtirgan mahsulotlarni yetishtirish va ishlab chiqarishdan tashqari bozorlarga ham qulay narxlarda va sifatli sotmoqda.",
+  about4:
+    "Kompaniyamiz 2020 yilda quritilgan mevalar va ikkilamchi ishlab chiqarilgan mevalarni sotish bo'yicha 12 ming tonnadan ortiq eksportga erishdi.",
+  about5:
+    "O‘tgan 2021-yilda esa quritilgan mevalar va ikkilamchi mahsulotlarni sotish 13,5 ming tonnadan ortiq eksportga yetdi.",
+  about6:
+    "Eksport mamlakatlari: Qozogʻiston, Rossiya, Qirgʻiziston, Tojikiston, Ukraina, Polsha, Belarus, Isroil, Iroq, Xitoy, Turkiya, arab mamlakatlari, Yevropa davlatlari va boshqalar.",
+
+  why1: "Nega biz?",
+  why2: "TOVAR NARXI VA SIFATNING OPTIMAL NOMONASI",
+  why3: "HAMMA MAHSULOTLAR SERTIFIKATLANGAN VA XALQARO STANDARTLARGA MUVOFIQ",
+  why4: "KENG ASSORTIMENT",
+  why5: "UZLUKSIZ TA'MINOT",
+  why6: "DOIMIY MIJOZLAR UCHUN AJOYIB CHEGIRMALAR",
 
   companies1:
     "Asosiy Agrofirma ООО «URGUT AGRO-VET SERVIS» (Suxofrukt uchun) 2015-y",

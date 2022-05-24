@@ -1,4 +1,5 @@
 import React from 'react'
+import { getText } from '../locales'
 
 const WhyWe = () => {
     return (
@@ -8,7 +9,7 @@ const WhyWe = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-12 zed">
-                            <h1 className="bold">Почему мы?</h1>
+                            <h1 className="bold">{getText("why1")}</h1>
                         </div>
                     </div>
                     <div className="row justify-content-center">
@@ -23,7 +24,7 @@ const WhyWe = () => {
                                         style={{ width: '200px', height: '200px' }}>
                                     </lord-icon>
                                 </div>
-                                <h5>ОПТИМАЛЬНОЕ СООТНОШЕНИЕ ЦЕНЫ И КАЧЕСТВА ТОВАРА</h5>
+                                <h5>{getText("why2")}</h5>
                             </div>
                         </div>
                         <div className="col-md-4 zed h-100">
@@ -37,7 +38,7 @@ const WhyWe = () => {
                                         style={{ width: '200px', height: '200px' }}>
                                     </lord-icon>
                                 </div>
-                                <h5>ВСЯ ПРОДУКЦИЯ СЕРТИФИЦИРОВАНА И СООТВЕТСТВУЕТ МЕЖДУНАРОДНЫМ СТАНДАРТАМ</h5>
+                                <h5>{getText("why3")}</h5>
                             </div>
                         </div>
                     </div>
@@ -53,7 +54,7 @@ const WhyWe = () => {
                                         style={{ width: '200px', height: '200px' }}>
                                     </lord-icon>
                                 </div>
-                                <h5>ШИРОКИЙ АССОРТИМЕНТ</h5>
+                                <h5>{getText("why4")}</h5>
                             </div>
                         </div>
                         <div className="col-sm-6 col-md-4 col-lg-3 zed h-100">
@@ -67,7 +68,7 @@ const WhyWe = () => {
                                         style={{ width: '200px', height: '200px' }}>
                                     </lord-icon>
                                 </div>
-                                <h5>БЕСПЕРЕБОЙНЫЕ ПОСТАВКИ</h5>
+                                <h5>{getText("why5")}</h5>
                             </div>
                         </div>
                         <div className="col-sm-6 col-md-4 col-lg-3 zed h-100">
@@ -83,7 +84,7 @@ const WhyWe = () => {
                                     </lord-icon>
 
                                 </div>
-                                <h5>ГИБКАЯ СИСТЕМА СКИДОК ДЛЯ ПОСТОЯННЫХ КЛИЕНТОВ</h5>
+                                <h5>{getText("why6")}</h5>
                             </div>
                         </div>
                     </div>

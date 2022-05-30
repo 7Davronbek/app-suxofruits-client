@@ -89,9 +89,9 @@ const SeeCatalog = (props) => {
 
                                 </div>
                                 <div className="col-lg-6 rightWrap">
-                                    {localStorage.getItem(LANGUAGE) === "uz" ? <h2 className="">{product.title_uz}</h2> : <h2 className="">{product.title}</h2>}
+                                    {localStorage.getItem(LANGUAGE) === "uz" ? <h2 className="">{product.title_uz}</h2> : localStorage.getItem(LANGUAGE) === "en" ? <h2 className="">{product.title_en}</h2> : <h2 className="">{product.title}</h2>}
                                     {/* <h2 className="bold"> {product.title}</h2> */}
-                                    {localStorage.getItem(LANGUAGE) === "uz" ? <h5 className="">{product.description_uz}</h5> : <h5 className="">{product.description}</h5>}
+                                    {localStorage.getItem(LANGUAGE) === "uz" ? <h5 className="">{product.description_uz}</h5> : localStorage.getItem(LANGUAGE) === "en" ? <h5 className="">{product.description_en}</h5> : <h5 className="">{product.description}</h5>}
                                     {/* <h5>{product.description}</h5> */}
                                     {/* <h5>Яркий аппетитный фрукт желтого цвета, временами – с красными бочками. Имеет характерное углубление во всю длину плода. Вкус – сладкий, насыщенный, мякоть сочная, с чуть заметной кислинкой. Произрастают в субтропиках. Самые вкусные абрикосы выращены в Самарканде и Ферганской долине. Плоды содержат большое количество калия, витаминов, микроэлементов, пектина. Используют для приготовления соков, джема, варенья, компотов. Особенно ценятся в виде сухофруктов.</h5> */}
                                     {/* <h5>Абрикос употребляют в свежем виде. измельченные плоды добавляют в кисло-сладкие соусы. В десертах хорошо сочетается с ядрами косточек - миндалем.</h5> */}

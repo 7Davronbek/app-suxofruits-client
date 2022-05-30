@@ -42,7 +42,7 @@ const Galary = () => {
                                                 <img src={`${item.image}`} className='w-100' alt="" />
                                             </div>
 
-                                            {localStorage.getItem(LANGUAGE) === "uz" ? <h2 className="">{item.name_uz}</h2> : <h2 className="">{item.name}</h2>}
+                                            {localStorage.getItem(LANGUAGE) === "uz" ? <h2 className="">{item.name_uz}</h2> : localStorage.getItem(LANGUAGE) === "en" ? <h2 className="">{item.name_en}</h2> : <h2 className="">{item.name}</h2>}
 
                                         </div>
 

@@ -60,7 +60,7 @@ const CatalogCards = ({ category }) => {
                                         <img src={`${item.image}`} alt="" className="w-100" />
                                     </div>
                                     <div className="text">
-                                        {localStorage.getItem(LANGUAGE) === "uz" ? <h2 className="">{item.title_uz}</h2> : <h2 className="">{item.title}</h2>}
+                                        {localStorage.getItem(LANGUAGE) === "uz" ? <h2 className="">{item.title_uz}</h2> : localStorage.getItem(LANGUAGE) === "en" ? <h2 className="">{item.title_en}</h2> : <h2 className="">{item.title}</h2>}
                                         {/* <h2>{item.title}</h2> */}
                                     </div>
                                 </div>

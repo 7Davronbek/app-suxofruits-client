@@ -45,6 +45,7 @@ const Navbar = () => {
                                 <select onChange={changeLanguage}>
                                     <option value="ru" selected={getLanguage() === "ru"} >Ру</option>
                                     <option value="uz" selected={getLanguage() === "uz"} >UZ</option>
+                                    <option value="en" selected={getLanguage() === "en"} >EN</option>
                                 </select>
 
                                 <a href='tel: +998998190007' className="btn btnGradient2 ml-auto d-flex align-items-center"><span className="me-3"> <FontAwesomeIcon icon={faPhone} /> </span>{getText("phone")}</a>

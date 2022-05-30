@@ -7,6 +7,38 @@ import { API_PATH, LANGUAGE } from '../tools/constants'
 const Galary = () => {
     const [allCategory, setAllCategory] = useState([])
 
+    // const [name, setName] = useState(null)
+    // const [nameUz, setNameUz] = useState(null)
+    // const [nameEn, setNameEn] = useState(null)
+    // const [file, setFile] = useState(null)
+
+    // const config = {
+    //     headers: {
+    //         'Accept': 'application/json',
+    //         'Content-Type': 'multipart/form-data'
+    //     },
+    // }
+
+    // const handleSubmit = (e) => {
+    //     e.preventDefault()
+
+    //     const formData = new FormData()
+    //     formData.append("name", name)
+    //     formData.append("name_uz", nameUz)
+    //     formData.append("name_en", nameEn)
+    //     formData.append("image", file)
+
+    //     console.log(formData);
+
+    //     axios.post(API_PATH + 'category', formData, config)
+    //         .then((res) => {
+    //             console.log(res);
+    //         })
+    //         .catch((err) => {
+    //             console.log(err);
+    //         })
+    // }
+
     const getAllCategory = async () => {
         await axios.get(API_PATH + 'category')
             .then((res) => {
@@ -20,6 +52,15 @@ const Galary = () => {
 
     return (
         <>
+
+            {/* <form onSubmit={handleSubmit}>
+                <input onChange={e => setName(e.target.value)} type="text" name='name' placeholder='Name ru' />
+                <input onChange={e => setNameUz(e.target.value)} type="text" name='name_uz' placeholder='Name uz' />
+                <input onChange={e => setNameEn(e.target.value)} type="text" name='name_en' placeholder='Name en' />
+                <input onChange={e => setFile(e.target.files[0])} type="file" name='image' />
+
+                <button type='submit'>Submit</button>
+            </form> */}
 
             <div className="galary">
                 <div className="container">

@@ -2,7 +2,7 @@ export const ru = {
   home: "Главная",
   production: "Продукция",
   aboutCompany: "О компании",
-  photoGalary: "Фотогаларея",
+  photoGalary: "Фотогалерея",
   contact: "Контакты",
 
   header1: "Оптовая продажа орехов и сухофруктов и овощей",

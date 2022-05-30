@@ -27,6 +27,7 @@ const Portfolio = () => {
 
     //     const config = {
     //         headers: {
+    //              'Accept': 'application/json',
     //             'Content-Type': 'multipart/form-data'
     //         },
     //     }
